@@ -1,6 +1,6 @@
 
 <div class="login-logo">
-    <a href="#"><b>Admin</b>LTEs</a>
+    <a href="#"><b>Admin</b>LTE</a>
 </div>
 <!-- /.login-logo -->
 <div class="login-box-body">

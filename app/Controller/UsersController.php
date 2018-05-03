@@ -9,7 +9,7 @@ class UsersController extends AppController {
     public function beforeFilter() {
         parent::beforeFilter();
         // Allow users to register and logout.
-        $this->Auth->allow('admin_login', 'register', 'add');
+        $this->Auth->allow('admin_login', 'register');
     }
 
     public function register() {
@@ -61,7 +61,7 @@ class UsersController extends AppController {
 
     public function admin_index() {
         $this->set('title_for_layout', 'Lariya Art Palace - Admin Panel');
-        
+
 
         //prd($totData);
     }
@@ -69,22 +69,40 @@ class UsersController extends AppController {
     public function admin_login() {
         $this->layout = 'login';
         $this->set('title_for_layout', 'Admin');
-        $user = $this->Session->read('Auth.Admin');
-        
-        $ddd = AuthComponent::password("123456");
-        
-        //prd($ddd);
-        if (isset($user['id']) && !empty($user['id'])) {
-            $this->redirect($this->Auth->loginRedirect);
-        }
+        // $user = $this->Session->read('Auth.Admin');
+        // prd($user);
+        //$ddd = AuthComponent::password("123456");
+        //prd($this->request);
 
-        if ($this->request->is('post')) {
-            if ($this->Auth->login()) {
+        $postData = $this->request->data;
+        if (isset($postData) && !empty($postData)) {
+            $userInfo = $this->User->find('first', array(
+                'conditions' => array(
+                    'username' => $postData['User']['username'],
+                    'password' => AuthComponent::password($postData['User']['password']),
+                    'role' => 0,
+                ),
+                    //'fields' => array('id', 'username', 'role')
+            ));
+
+
+
+            if (isset($userInfo['User']['id']) && !empty($userInfo['User']['id'])) {
+                echo $this->flash_msg('Welcome to Admin Panel', 1);
                 $this->redirect($this->Auth->loginRedirect);
-            } else {
-                $this->Session->setFlash(__('Incorrect Username or Password'));
             }
         }
+
+
+
+//        if ($this->request->is('post')) {
+//            if ($this->Auth->login()) {
+//                $this->redirect($this->Auth->loginRedirect);
+//            } else {
+//                $a = $this->Session->setFlash(__('Incorrect Username or Password'));
+//                prd($a);
+//            }
+//        }
     }
 
     function admin_logout() {
@@ -107,7 +125,7 @@ class UsersController extends AppController {
 
         $allSettings = $this->Sitesetting->find('all', array(
             'conditions' => array('Sitesetting.status' => 1)
-                ));
+        ));
         $this->set('allSettings', $allSettings);
         //prd($allSettings);
     }
