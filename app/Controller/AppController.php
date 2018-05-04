@@ -20,6 +20,11 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 App::uses('Controller', 'Controller');
+App::uses('AuthComponent', 'Controller/Component');
+App::uses('CakeTime', 'Utility');
+//App::uses('CakeNumber', 'Utility');
+App::uses('Sanitize', 'Utility');
+App::uses('CakeEmail', 'Network/Email');
 
 /**
  * Application Controller
@@ -33,8 +38,20 @@ App::uses('Controller', 'Controller');
 class AppController extends Controller {
 
     public $components = array(
-        'Session',
         'Auth',
+        'Session',
+        'Cookie',
+        'RequestHandler',
+    );
+    public $helpers = array(
+        'Html',
+        'Form',
+        'Js',
+        // 'Image',
+        'Session',
+        'Text',
+        'Time',
+            //'General'
     );
 
     public function beforeFilter() {
@@ -46,13 +63,26 @@ class AppController extends Controller {
         $this->Auth->loginRedirect = array('admin' => FALSE, 'controller' => 'users', 'action' => 'dashboard');
         $this->Auth->logoutRedirect = array('admin' => FALSE, 'controller' => 'users', 'action' => 'login');
 
+
+        $controller = $this->params['controller'];
+        $action = $this->params['action'];
+        $this->set("controller", $controller);
+        $this->set("action", $action);
+
         if (isset($this->request->params['admin'])) {
             // to check session key if we not define this here then is will check with 'Auth.User' so dont remove it
             AuthComponent::$sessionKey = 'Auth.Admin';
+
             $this->Auth->loginAction = array('admin' => true, 'controller' => 'users', 'action' => 'admin_login');
             $this->Auth->loginRedirect = array('admin' => true, 'controller' => 'users', 'action' => 'admin_dashboard');
             $this->Auth->logoutRedirect = array('admin' => true, 'controller' => 'users', 'action' => 'admin_login');
+            //$this->Auth->authError = "You can't access the page";
+            //$this->Auth->authorize = array('controller');
         }
+    }
+
+    public function isAuthorized() {
+        return true;
     }
 
     public function flash_msg($msg, $flag = 1) {

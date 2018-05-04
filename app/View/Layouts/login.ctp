@@ -48,7 +48,7 @@ $websiteTitle = ('Lariya Art Palace');
     </head>
     <body class="hold-transition login-page">
         <div class="login-box">
-            <?php $this->Element('flash_msg'); ?>
+            <?php echo $this->Element('flash_msg'); ?>
             <?php echo $this->fetch('content'); ?>
 
         </div>
