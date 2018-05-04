@@ -26,8 +26,8 @@
  * to use (in this case, /app/View/Pages/home.ctp)...
  */
 
-Router::connect('/', array('admin' => false, 'controller' => 'users', 'action' => 'login'));
-Router::connect('/admin', array('admin' => true, 'controller' => 'users', 'action' => 'login'));
+Router::connect('/', array('admin' => false, 'controller' => 'users', 'action' => 'dashboard'));
+Router::connect('/admin', array('admin' => true, 'controller' => 'users', 'action' => 'dashboard'));
 
 /**
  * ...and connect the rest of 'Pages' controller's URLs.

@@ -55,13 +55,17 @@ class UsersController extends AppController {
         }
     }
 
+    public function dashboard() {
+        
+    }
+
     public function admin_dashboard() {
         
     }
 
     public function admin_index() {
         $this->set('title_for_layout', 'Lariya Art Palace - Admin Panel');
-        
+
 
         //prd($totData);
     }
@@ -70,9 +74,9 @@ class UsersController extends AppController {
         $this->layout = 'login';
         $this->set('title_for_layout', 'Admin');
         $user = $this->Session->read('Auth.Admin');
-        
+
         $ddd = AuthComponent::password("123456");
-        
+
         //prd($ddd);
         if (isset($user['id']) && !empty($user['id'])) {
             $this->redirect($this->Auth->loginRedirect);

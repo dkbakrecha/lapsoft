@@ -39,7 +39,13 @@ class AppController extends Controller {
 
     public function beforeFilter() {
         parent::beforeFilter();
-         // prd($this->request);
+        // prd($this->request);
+
+        AuthComponent::$sessionKey = 'Auth.User';
+        $this->Auth->loginAction = array('admin' => FALSE, 'controller' => 'users', 'action' => 'login');
+        $this->Auth->loginRedirect = array('admin' => FALSE, 'controller' => 'users', 'action' => 'dashboard');
+        $this->Auth->logoutRedirect = array('admin' => FALSE, 'controller' => 'users', 'action' => 'login');
+
         if (isset($this->request->params['admin'])) {
             // to check session key if we not define this here then is will check with 'Auth.User' so dont remove it
             AuthComponent::$sessionKey = 'Auth.Admin';
