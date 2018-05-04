@@ -5814,3 +5814,39 @@ Stack Trace:
 #1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2018-05-04 18:08:25 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-05-04 18:08:26 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user2-160x160.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-05-04 18:08:26 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-05-04 18:08:26 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
