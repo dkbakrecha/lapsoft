@@ -55,22 +55,27 @@ class AppController extends Controller {
     );
 
     public function beforeFilter() {
+        parent::beforeFilter();
+        // prd($this->request);
+
+        AuthComponent::$sessionKey = 'Auth.User';
+        $this->Auth->loginAction = array('admin' => FALSE, 'controller' => 'users', 'action' => 'login');
+        $this->Auth->loginRedirect = array('admin' => FALSE, 'controller' => 'users', 'action' => 'dashboard');
+        $this->Auth->logoutRedirect = array('admin' => FALSE, 'controller' => 'users', 'action' => 'login');
+
 
         $controller = $this->params['controller'];
         $action = $this->params['action'];
         $this->set("controller", $controller);
         $this->set("action", $action);
 
-        // prd($this->request);
-        // parent::beforeFilter();
-        // prd($this->request);
         if (isset($this->request->params['admin'])) {
             // to check session key if we not define this here then is will check with 'Auth.User' so dont remove it
             AuthComponent::$sessionKey = 'Auth.Admin';
 
-            $this->Auth->loginAction = array('admin' => true, 'controller' => 'users', 'action' => 'admin_login');
-            $this->Auth->loginRedirect = array('admin' => true, 'controller' => 'users', 'action' => 'admin_dashboard');
-            $this->Auth->logoutRedirect = array('admin' => true, 'controller' => 'users', 'action' => 'admin_login');
+            $this->Auth->loginAction = array('admin' => TRUE, 'controller' => 'users', 'action' => 'login');
+            $this->Auth->loginRedirect = array('admin' => TRUE, 'controller' => 'users', 'action' => 'dashboard');
+            $this->Auth->logoutRedirect = array('admin' => TRUE, 'controller' => 'users', 'action' => 'login');
             //$this->Auth->authError = "You can't access the page";
             //$this->Auth->authorize = array('controller');
         }

@@ -1,6 +1,6 @@
 <?php
 $fdata = $this->Session->read('Message');
-pr($fdata);
+//pr($fdata);
 if (isset($fdata['flash']) && !empty($fdata['flash'])) {
     if ($fdata['flash']['params']['id'] == 'success') {
         $mc = 'update-success';
