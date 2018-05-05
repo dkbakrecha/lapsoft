@@ -74,8 +74,6 @@ class UsersController extends AppController {
         $this->layout = 'login';
         $this->set('title_for_layout', 'Admin');
 
-        
-//prd("sdfff");
         $postData = $this->request->data;
         //prd($postData);
         if (isset($postData) && !empty($postData)) {
@@ -88,8 +86,6 @@ class UsersController extends AppController {
                     //'fields' => array('id', 'username', 'role')
             ));
             if ($this->Auth->login($userInfo)) {
-
-
                 if (isset($userInfo['User']['id']) && !empty($userInfo['User']['id'])) {
                     echo $this->flash_msg('Welcome to Admin Panel', 1);
                     $this->redirect($this->Auth->loginRedirect);
@@ -113,6 +109,7 @@ class UsersController extends AppController {
 
     function admin_logout() {
         $this->Session->delete('Auth.Admin');
+        $this->flash_msg("Logged out successfully", 1);
         $this->redirect(array('controller' => 'Users', 'action' => 'admin_login', 'admin' => true));
     }
 

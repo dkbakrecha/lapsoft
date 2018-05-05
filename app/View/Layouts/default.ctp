@@ -45,6 +45,7 @@ $websiteTitle = ('Lariya Art Palace');
             '/bower_components/jvectormap/jquery-jvectormap.css', //jvectormap 
             '/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css', //Date Pickers
             '/bower_components/bootstrap-daterangepicker/daterangepicker.css', //Daterange picker
+            
             '/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css', //bootstrap wysihtml5 - text editor
         ));
         echo $this->fetch('meta');
