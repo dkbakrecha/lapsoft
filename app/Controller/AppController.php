@@ -73,9 +73,9 @@ class AppController extends Controller {
             // to check session key if we not define this here then is will check with 'Auth.User' so dont remove it
             AuthComponent::$sessionKey = 'Auth.Admin';
 
-            $this->Auth->loginAction = array('admin' => true, 'controller' => 'users', 'action' => 'admin_login');
-            $this->Auth->loginRedirect = array('admin' => true, 'controller' => 'users', 'action' => 'admin_dashboard');
-            $this->Auth->logoutRedirect = array('admin' => true, 'controller' => 'users', 'action' => 'admin_login');
+            $this->Auth->loginAction = array('admin' => TRUE, 'controller' => 'users', 'action' => 'login');
+            $this->Auth->loginRedirect = array('admin' => TRUE, 'controller' => 'users', 'action' => 'dashboard');
+            $this->Auth->logoutRedirect = array('admin' => TRUE, 'controller' => 'users', 'action' => 'login');
             //$this->Auth->authError = "You can't access the page";
             //$this->Auth->authorize = array('controller');
         }

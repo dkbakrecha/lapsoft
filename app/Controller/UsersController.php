@@ -60,7 +60,7 @@ class UsersController extends AppController {
     }
 
     public function admin_dashboard() {
-        
+        //prd("Sdf");
     }
 
     public function admin_index() {
@@ -74,11 +74,10 @@ class UsersController extends AppController {
         $this->layout = 'login';
         $this->set('title_for_layout', 'Admin');
 
-        if (isset($user['id']) && !empty($user['id'])) {
-            $this->redirect($this->Auth->loginRedirect);
-        }
-
+        
+//prd("sdfff");
         $postData = $this->request->data;
+        //prd($postData);
         if (isset($postData) && !empty($postData)) {
             $userInfo = $this->User->find('first', array(
                 'conditions' => array(
@@ -88,12 +87,15 @@ class UsersController extends AppController {
                 ),
                     //'fields' => array('id', 'username', 'role')
             ));
+            if ($this->Auth->login($userInfo)) {
 
 
-
-            if (isset($userInfo['User']['id']) && !empty($userInfo['User']['id'])) {
-                echo $this->flash_msg('Welcome to Admin Panel', 1);
-                $this->redirect($this->Auth->loginRedirect);
+                if (isset($userInfo['User']['id']) && !empty($userInfo['User']['id'])) {
+                    echo $this->flash_msg('Welcome to Admin Panel', 1);
+                    $this->redirect($this->Auth->loginRedirect);
+                }
+            } else {
+                //prd("sdf");
             }
         }
 
