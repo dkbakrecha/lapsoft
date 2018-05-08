@@ -72,7 +72,7 @@ class UsersController extends AppController {
 
     public function admin_login() {
         $this->layout = 'login';
-        $this->set('title_for_layout', 'Admin');
+        $this->set('title_for_layout', 'Admin Login');
 
         $postData = $this->request->data;
         //prd($postData);
