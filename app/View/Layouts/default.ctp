@@ -47,27 +47,12 @@ $websiteTitle = ('Lariya Art Palace');
             '/bower_components/bootstrap-daterangepicker/daterangepicker.css', //Daterange picker
             
             '/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css', //bootstrap wysihtml5 - text editor
+            '/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css'
         ));
         echo $this->fetch('meta');
         ?>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-    </head>
-    <body class="hold-transition skin-blue sidebar-mini">
-        <div class="wrapper">
-            <?php echo $this->Element('header') ?>
-            <?php echo $this->Element('main_slider') ?>
-            <!-- Content Wrapper. Contains page content -->
-            <div class="content-wrapper">
-                <?php echo $this->Element('flash_msg'); ?>
-                <?php echo $this->fetch('content'); ?>
-                <?php // echo $this->Element('main_container') ?>
-            </div>
-            <
-            <?php echo $this->Element('footer') ?>
-            <?php echo $this->Element('control_slider') ?>
 
-        </div>
-        <?php //echo $this->element('sql_dump');  ?>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 
         <?php
         echo $this->Html->script(array(
@@ -86,11 +71,32 @@ $websiteTitle = ('Lariya Art Palace');
             '/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js', //Bootstrap WYSIHTML5
             '/bower_components/jquery-slimscroll/jquery.slimscroll.min.js', //Slimscroll
             '/bower_components/fastclick/lib/fastclick.js', //FastClick
+            '/bower_components/datatables.net/js/jquery.dataTables.min.js',
+            '/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js',
             'webjs/js/adminlte.min.js', //AdminLTE App
             'webjs/js/pages/dashboard.js', //AdminLTE dashboard demo (This is only for demo purposes)
             'webjs/js/demo.js', //AdminLTE for demo purposes
         ));
         ?>
+    </head>
+    <body class="hold-transition skin-blue sidebar-mini">
+        <div class="wrapper">
+            <?php echo $this->Element('header') ?>
+            <?php echo $this->Element('main_slider') ?>
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                <?php echo $this->Element('flash_msg'); ?>
+                <?php echo $this->fetch('content'); ?>
+                <?php // echo $this->Element('main_container') ?>
+            </div>
+
+            <?php echo $this->Element('footer') ?>
+            <?php echo $this->Element('control_slider') ?>
+
+        </div>
+        <?php //echo $this->element('sql_dump');  ?>
+
+
         <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
         <script>
             $.widget.bridge('uibutton', $.ui.button);
