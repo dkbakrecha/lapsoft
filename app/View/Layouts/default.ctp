@@ -60,7 +60,7 @@ $websiteTitle = ('Lariya Art Palace');
             '/bower_components/jquery-ui/jquery-ui.min.js', // jQuery UI 1.11.4
             '/bower_components/bootstrap/dist/js/bootstrap.min.js', // Bootstrap 3.3.7
             '/bower_components/raphael/raphael.min.js', //Morris.js charts
-            '/bower_components/morris.js/morris.min.js', //Morris.js charts
+            //'/bower_components/morris.js/morris.min.js', //Morris.js charts
             '/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js', //Sparkline
             '/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js', //jvectormap
             '/plugins/jvectormap/jquery-jvectormap-world-mill-en.js', //jvectormap
@@ -74,7 +74,7 @@ $websiteTitle = ('Lariya Art Palace');
             '/bower_components/datatables.net/js/jquery.dataTables.min.js',
             '/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js',
             'webjs/js/adminlte.min.js', //AdminLTE App
-            'webjs/js/pages/dashboard.js', //AdminLTE dashboard demo (This is only for demo purposes)
+           // 'webjs/js/pages/dashboard.js', //AdminLTE dashboard demo (This is only for demo purposes)
             'webjs/js/demo.js', //AdminLTE for demo purposes
         ));
         ?>

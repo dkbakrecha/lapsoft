@@ -46,9 +46,15 @@
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="<?php echo $this->Html->url(array('admin' => true, 'controller' => 'products', 'action' => 'add')); ?>">
-                            <i class="fa fa-circle-o">
-                            </i>Add Product</a>
+                    <li>
+                        <a href="<?php echo $this->Html->url(array('admin' => true, 'controller' => 'products', 'action' => 'add')); ?>">
+                            <i class="fa fa-circle-o"></i>Add Product
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?php echo $this->Html->url(array('admin' => true, 'controller' => 'products', 'action' => 'index')); ?>">
+                            <i class="fa fa-circle-o"></i>Edit Product
+                        </a>
                     </li>
                     <li class="treeview">
                         <a href="#"><i class="fa fa-circle-o"></i> Level One

@@ -85,6 +85,51 @@ class AppController extends Controller {
         return true;
     }
 
+    public function fileUpload($file_info, $allowedExt, $fileSavePath, $Size) {
+        /*
+         * Function for file upload
+         * supply all four parameters $file_info , $allowedExt, $fileSavePath, $size
+         * used in Pages controller eshop_support()
+         */
+
+        if (isset($file_info) && !empty($file_info)) {
+            $fileSize = $file_info['size'];
+            if ($fileSize > $Size) {
+                echo "<script>"
+                . "alert('File size more then 1mb.');"
+                . "</script>";
+                return false;
+            } else {
+                if (!empty($file_info['name'])) {
+                    $ext = $this->get_extension($file_info['name']);
+                    if (in_array($ext, $allowedExt)) {
+                        $newFileName = date("mY") . "_" . rand(1000, 9999) . '.' . $ext;
+                        $destination = $fileSavePath . $newFileName;
+                        $moved = move_uploaded_file($file_info['tmp_name'], $destination);
+                        if ($moved) {
+                            Configure::write('newFileName', $newFileName);
+                            return true;
+                            // prd('File moved');
+                        } else {
+                            return false;
+                            // prd('File not moved.');
+                        }
+                    } else {
+                        echo "<script>alert('This file type not allowed.');</script>";
+                        return false;
+                    }
+                }
+            }
+        }
+        return true;
+    }
+
+    public function get_extension($file_name) {
+        $ext = explode('.', $file_name);
+        $ext = array_pop($ext);
+        return strtolower($ext);
+    }
+
     public function flash_msg($msg, $flag = 1) {
         if ($flag == 1) {
             $this->Session->setFlash($msg, 'default', array('id' => 'success'));
