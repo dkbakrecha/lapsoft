@@ -60,6 +60,12 @@ class ProductsController extends AppController {
         }
         // End of checking URL valid accessibility
 
+        $this->loadModel('ProductImage');
+        if (!empty($id)) {
+            $product_image = $this->ProductImage->find('all', array('conditions' => array('product_id' => $id), 'order' => array('order' => 'asc')));
+            $this->set('product_image', $product_image);
+        }
+
         $condition = array();
         $condition['Product.status !='] = 2;
         $condition['Product.id'] = $id;
@@ -118,7 +124,7 @@ class ProductsController extends AppController {
     }
 
     public function admin_image_multi_upload() {
-        prd($this->request->data);
+        // prd($this->request->data);
         if (isset($_FILES['uploadfile']['name']) && !empty($_FILES['uploadfile']['name'][0])) {
             $product_id = 0;
             if (isset($this->request->data['product_id'])) {
@@ -195,10 +201,10 @@ class ProductsController extends AppController {
 
                     if ($moved) {
                         $orderValue = 0;
-                        $this->loadModel('ProductPhoto');
-                        $maxOrderValue = $this->ProductPhoto->find('first', array(
-                            'conditions' => array('ProductPhoto.product_id' => $lastInsertID),
-                            'fields' => array('MAX(ProductPhoto.order) as maxnum')
+                        $this->loadModel('ProductImage');
+                        $maxOrderValue = $this->ProductImage->find('first', array(
+                            'conditions' => array('ProductImage.product_id' => $lastInsertID),
+                            'fields' => array('MAX(ProductImage.order) as maxnum')
                         ));
                         if (empty($maxOrderValue)) {
                             $orderValue = 1;
@@ -207,15 +213,15 @@ class ProductsController extends AppController {
                         }
 
                         $PhotoData = array();
-                        $PhotoData['ProductPhoto']['product_id'] = $lastInsertID;
-                        $PhotoData['ProductPhoto']['order'] = $orderValue;
-                        $PhotoData['ProductPhoto']['image'] = $newFileName;
+                        $PhotoData['ProductImage']['product_id'] = $lastInsertID;
+                        $PhotoData['ProductImage']['order'] = $orderValue;
+                        $PhotoData['ProductImage']['product_image'] = $newFileName;
 
-                        $this->ProductPhoto->Create();
-                        $imageData = $this->ProductPhoto->save($PhotoData);
+                        $this->ProductImage->Create();
+                        $imageData = $this->ProductImage->save($PhotoData);
 
-                        $imagePath = $this->resize_url("admin_uploads/" . $newFileName, 80, 104);
-                        $responseArray[$i]['img_id'] = $imageData['ProductPhoto']['id'];
+                        $imagePath = $this->resize_url("admin_uploads/" . $newFileName, 150, 100);
+                        $responseArray[$i]['img_id'] = $imageData['ProductImage']['id'];
                         $responseArray[$i]['img_name'] = $imagePath;
                         $responseArray[$i]['product_id'] = $lastInsertID;
                     }
@@ -226,6 +232,31 @@ class ProductsController extends AppController {
             echo $respone;
         }
         exit;
+    }
+
+    public function admin_deletePhoto() {
+        if ($this->request->is('ajax')) {
+
+            $this->loadModel('ProductImage');
+            $prdId = $this->request->data['Photo_id'];
+            $this->ProductImage->id = $prdId;
+            $imageName = $this->ProductImage->find('first', array('conditions' =>
+                array('ProductImage.id' => $prdId),
+                'fields' => 'ProductImage.product_image'));
+          //  prd($imageName);
+            if (file_exists(WWW_ROOT . 'img/admin_uploads/' . $imageName['ProductImage']['product_image'])) {
+                unlink('img/admin_uploads/' . $imageName['ProductImage']['product_image']);
+            }
+            if ($this->ProductImage->delete()) {
+                echo '1';
+            } else {
+                echo '0';
+            }
+            exit;
+        } else {
+            $this->siteMessage("INVALID_REQUEST_DATA", array("[['data']]" => 'location'));
+            $this->redirect(array('eshop' => false, 'controller' => 'products', 'action' => 'add'));
+        }
     }
 
     public function admin_support() {

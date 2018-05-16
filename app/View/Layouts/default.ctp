@@ -45,9 +45,9 @@ $websiteTitle = ('Lariya Art Palace');
             '/bower_components/jvectormap/jquery-jvectormap.css', //jvectormap 
             '/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css', //Date Pickers
             '/bower_components/bootstrap-daterangepicker/daterangepicker.css', //Daterange picker
-            
             '/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css', //bootstrap wysihtml5 - text editor
-            '/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css'
+            '/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css',
+            'admin_css/admin_css.css'
         ));
         echo $this->fetch('meta');
         ?>
@@ -74,8 +74,9 @@ $websiteTitle = ('Lariya Art Palace');
             '/bower_components/datatables.net/js/jquery.dataTables.min.js',
             '/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js',
             'webjs/js/adminlte.min.js', //AdminLTE App
-           // 'webjs/js/pages/dashboard.js', //AdminLTE dashboard demo (This is only for demo purposes)
+            // 'webjs/js/pages/dashboard.js', //AdminLTE dashboard demo (This is only for demo purposes)
             'webjs/js/demo.js', //AdminLTE for demo purposes
+            'bootbox.min',
         ));
         ?>
     </head>
@@ -94,7 +95,7 @@ $websiteTitle = ('Lariya Art Palace');
             <?php echo $this->Element('control_slider') ?>
 
         </div>
-        <?php //echo $this->element('sql_dump');  ?>
+        <?php //echo $this->element('sql_dump');   ?>
 
 
         <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->

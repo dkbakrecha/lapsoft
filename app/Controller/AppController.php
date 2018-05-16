@@ -47,7 +47,7 @@ class AppController extends Controller {
         'Html',
         'Form',
         'Js',
-        // 'Image',
+        'Image',
         'Session',
         'Text',
         'Time',
@@ -122,6 +122,130 @@ class AppController extends Controller {
             }
         }
         return true;
+    }
+
+    public function new_image_compress($file, $destination, $quality, $w, $h, $crop = FALSE) {
+
+        //file = source file location path
+        //destination = saving location
+        //quailty = compressation level
+
+        $info = getimagesize($file);
+        list($width, $height) = getimagesize($file);
+        $r = $width / $height;
+        if ($crop) {
+            if ($width > $height) {
+                $width = ceil($width - ($width * abs($r - $w / $h)));
+            } else {
+                $height = ceil($height - ($height * abs($r - $w / $h)));
+            }
+            $newwidth = $w;
+            $newheight = $h;
+        } else {
+            if ($w / $h > $r) {
+                $newwidth = $h * $r;
+                $newheight = $h;
+            } else {
+                $newheight = $w / $r;
+                $newwidth = $w;
+            }
+        }
+
+        // Resample
+        $image_p = imagecreatetruecolor($newwidth, $newheight);
+        if ($info['mime'] == 'image/jpeg')
+            $image = imagecreatefromjpeg($file);
+        elseif ($info['mime'] == 'image/gif')
+            $image = imagecreatefromgif($file);
+        elseif ($info['mime'] == 'image/png')
+            $image = imagecreatefrompng($file);
+        imagecopyresampled($image_p, $image, 0, 0, 0, 0, $newwidth, $newheight, $width, $height);
+
+        // Output
+        imagejpeg($image_p, $destination, $quality);
+        return $destination;
+    }
+
+    protected function resize_url($path, $width, $height, $aspect = true, $htmlAttributes = array(), $return = false) {
+
+        $types = array(1 => "gif", "jpeg", "png", "swf", "psd", "wbmp"); // used to determine image type
+        if (empty($htmlAttributes['alt']))
+            $htmlAttributes['alt'] = 'thumb';  // Ponemos alt default
+
+        $uploadsDir = 'img';
+
+        $fullpath = ROOT . DS . APP_DIR . DS . WEBROOT_DIR . DS . $uploadsDir . DS;
+
+        //$tempPath=realpath(dirname(dirname(dirname(__FILE__)))).'/webroot/img/';
+        $tempPath = $uploadsDir . '/';
+
+        if (file_exists($tempPath . $path) and $path != 'admin_uploads/')
+            $url = ROOT . DS . APP_DIR . DS . WEBROOT_DIR . DS . IMAGES_URL . $path;
+        else
+            $url = $tempPath . "no_image.png";
+
+        if (!($size = getimagesize($url)))
+            return; // image doesn't exist
+
+        if ($aspect) { // adjust to aspect.
+            if ($height == 0) {
+                $height = ceil($width / ($size[0] / $size[1]));
+            } else if ($width == 0) {
+                $width = ceil(($size[0] / $size[1]) * $height);
+            } else if (($size[1] / $height) > ($size[0] / $width))  // $size[0]:width, [1]:height, [2]:type
+                $width = ceil(($size[0] / $size[1]) * $height);
+            else
+                $height = ceil($width / ($size[0] / $size[1]));
+        }
+
+        $relfile = $this->webroot . $uploadsDir . '/resized/' . $width . 'x' . $height . '_' . basename($path); // relative file
+        $cachefile = $fullpath . 'resized' . DS . $width . 'x' . $height . '_' . basename($path);  // location on server
+
+        if (file_exists($cachefile)) {
+            $csize = getimagesize($cachefile);
+            $cached = ($csize[0] == $width && $csize[1] == $height); // image is cached
+            if (@filemtime($cachefile) < @filemtime($url)) // check if up to date
+                $cached = false;
+        } else {
+            $cached = false;
+        }
+
+        if (!$cached) {
+            $resize = ($size[0] > $width || $size[1] > $height) || ($size[0] < $width || $size[1] < $height);
+        } else {
+            $resize = false;
+        }
+
+        if ($resize) {
+            $image = call_user_func('imagecreatefrom' . $types[$size[2]], $url);
+            if (function_exists("imagecreatetruecolor") && ($temp = imagecreatetruecolor($width, $height))) {
+                imagealphablending($temp, false);
+                imagesavealpha($temp, true);
+                $transparent = imagecolorallocatealpha($temp, 255, 255, 255, 127);
+                imagefilledrectangle($temp, 0, 0, $width, $height, $transparent);
+                imagecopyresampled($temp, $image, 0, 0, 0, 0, $width, $height, $size[0], $size[1]);
+            } else {
+
+                $temp = imagecreate($width, $height);
+
+                imagealphablending($temp, false);
+                imagesavealpha($temp, true);
+                $transparent = imagecolorallocatealpha($temp, 255, 255, 255, 127);
+                imagefilledrectangle($temp, 0, 0, $width, $height, $transparent);
+
+                imagecopyresized($temp, $image, 0, 0, 0, 0, $width, $height, $size[0], $size[1]);
+            }
+            call_user_func("image" . $types[$size[2]], $temp, $cachefile);
+            imagedestroy($image);
+            imagedestroy($temp);
+        } else {
+            if (!$cached) {
+                return ($path);
+            }
+        }
+
+        return $relfile;
+        return $this->output(sprintf($this->Html->_tags['image'], $relfile, $this->Html->_parseAttributes($htmlAttributes, null, '', ' ')), $return);
     }
 
     public function get_extension($file_name) {

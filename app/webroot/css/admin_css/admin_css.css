@@ -1,0 +1,73 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16-May-2018, 21:12:40
+    Author     : Jay Soni
+*/
+
+#sortable {
+    list-style-type: none;
+}
+#sortable {
+    float: left;
+    list-style-type: none;
+    // margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#sortable li {
+    float: left;
+    margin: 0 10px 3px 0;
+    padding: 1px;
+    text-align: center;
+    width: auto;
+}
+#sortable li {
+    float: left;
+    margin: 0 10px 20px 0;
+    padding: 1px;
+    text-align: center;
+    width: auto;
+}
+
+.card_image {
+    text-align: center;
+}
+.card_image {
+    box-shadow: #CCCCCC 0 0 5px inset;
+    float: left;
+    margin: 0 5px;
+    padding: 10px;
+    text-align: center;
+    // width: 100px;
+    // height: 100px;
+}
+.card_image {
+    cursor: pointer;
+}
+
+.x_img_outer {
+    float: right;
+    margin-right: 5px;
+    margin-top: -21px;
+}
+.x_img_outer {
+    float: right;
+    margin-right: 5px;
+    margin-top: -21px;
+}
+.card_image > img {
+    width: 150px;
+    height: 100px;
+}
+.x_img {
+    background-image: url("../../img/cross.png");
+    cursor: pointer !important;
+    height: 24px;
+    position: absolute;
+    width: 24px;
+    z-index: 100;
+}

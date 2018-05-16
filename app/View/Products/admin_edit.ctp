@@ -1,4 +1,8 @@
 <?php
+//prd($product_image);
+echo $this->Html->script('jquery.form.min');
+?>  
+<?php
 if (isset($productId) && !empty($productId)) {
     echo $productId;
 }
@@ -29,10 +33,9 @@ if (isset($productId) && !empty($productId)) {
             <div class="nav-tabs-custom">
                 <ul class="nav nav-tabs">
                     <li class="active"><a href="#tab_1" data-toggle="tab">Part 1</a></li>
-
-                    <li><a href="#tab_2" data-toggle="tab">Part 2</a></li>
                     <li><a href="#tab_2" data-toggle="tab">Part 2</a></li>
                     <li><a href="#tab_3" data-toggle="tab">Part 3</a></li>
+                    <li><a href="#tab_4" data-toggle="tab">Part 4</a></li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                             Dropdown <span class="caret"></span>
@@ -153,11 +156,23 @@ if (isset($productId) && !empty($productId)) {
                         <!-- /.box -->
                     </div>
                     <!-- /.tab-pane -->
+
+
                     <div class="tab-pane" id="tab_2">
                         <!-- Horizontal Form -->
                         <div class="box box-info">
                             <div class="box-header with-border">
-                                <h3 class="box-title">Product Images</h3>
+                                <h3 class="box-title">Other Informations</h3>
+                            </div>
+
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                    <div class="tab-pane" id="tab_3">
+                        <!-- Horizontal Form -->
+                        <div class="box box-info">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">Upload Images</h3>
                             </div>
                             <!-- /.box-header -->
                             <!-- form start -->
@@ -171,8 +186,8 @@ if (isset($productId) && !empty($productId)) {
                             ?>
                             <div class="box-body">
                                 <div class="form-group">
-                                    <label class="col-md-3 control-label"></label>
-                                    <div class="col-sm-9">
+                                    <!--                                    <label class="col-md-3 control-label"></label>-->
+                                    <div class="col-sm-12">
                                         <div id="progressBlock" style="	opacity: 0">
                                             <div class="progress">
                                                 <div class="progress-bar progress-bar-info progress-bar-striped">0%</div>
@@ -183,20 +198,37 @@ if (isset($productId) && !empty($productId)) {
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-md-3 control-label"><h4>Upload Images</h4></label>
-                                    <div class="col-sm-9">
+                                    <!--<label class="col-md-3 control-label"><h4>Upload Images</h4></label>-->
+                                    <div class="col-sm-12">
+                                        <!--                                        <div class="timeline-item">
+                                                                                    <div class="timeline-body">
+                                        <?php
+//                                                if (isset($product_image[0])) {
+//                                                    foreach ($product_image as $image) {
+//                                                        
+                                        ?>
+                                                                                                //<?php // echo $this->Image->resize('admin_uploads/' . $image['ProductImage']['product_image'], 150, 100, null, array('class' => "margin"));  ?>
+                                                                                                //<?php
+//                                                    }
+//                                                }
+                                        ?>
+                                                                                    </div>  
+                                                                                </div>-->
+
+
+
                                         <div id="images">
                                             <ul id="sortable">
                                                 <?php
                                                 if (isset($product_image[0])) {
                                                     foreach ($product_image as $image) {
                                                         ?>
-                                                        <li id="item_<?php echo $image['ProductPhoto']['id']; ?>">
+                                                        <li id="item_<?php echo $image['ProductImage']['id']; ?>">
                                                             <div class="card_image">
                                                                 <div class="x_img_outer">
-                                                                    <div class="x_img" style="" onclick="delImage('<?php echo $image['ProductPhoto']['id']; ?>')"></div>
+                                                                    <div class="x_img" style="" onclick="delImage('<?php echo $image['ProductImage']['id']; ?>')"></div>
                                                                 </div>
-                                                                <?php echo $this->Image->resize('admin_uploads/' . $image['ProductPhoto']['image'], 100, 150); ?>
+        <?php echo $this->Image->resize('admin_uploads/' . $image['ProductImage']['product_image'], 150, 100); ?>
                                                             </div>
                                                         </li>
                                                         <?php
@@ -235,7 +267,7 @@ if (isset($productId) && !empty($productId)) {
                         <!-- /.box -->
                     </div>
                     <!-- /.tab-pane -->
-                    <div class="tab-pane" id="tab_3">
+                    <div class="tab-pane" id="tab_4">
                         This is part 4.
                     </div>
                     <!-- /.tab-pane -->
@@ -245,7 +277,7 @@ if (isset($productId) && !empty($productId)) {
             <!-- nav-tabs-custom -->
         </div>
         <!-- /.col -->
-        <?php echo $this->Form->create('imageTemp', array('type' => 'file', 'id' => 'imageTempStep1Form')); ?>
+            <?php echo $this->Form->create('imageTemp', array('type' => 'file', 'id' => 'imageTempStep1Form')); ?>
         <label style="display:none" class="">
             <?php
             echo $this->Form->input('uploadfile.', array(
@@ -268,17 +300,17 @@ if (isset($productId) && !empty($productId)) {
 <?php echo $this->Form->end(); ?>
 <script>
     jQuery(document).ready(function($) {
-      //  alert($('#ProductId').val());
+        //  alert($('#ProductId').val());
     });
     function newupload() {
-        alert("I am in");
+        //alert("I am in");
         var bar = $('.progress-bar');
         var percent = $('.progress-bar');
         var status = $('#status');
         var options = {
             url: '<?php echo $this->Html->url(array("admin" => true, "controller" => "products", "action" => "image_multi_upload")); ?>', data: ({product_id: $('#ProductId').val()}),
             error: function(data) {
-
+                // alert(data);
             },
             beforeSend: function() {
                 $("#progressBlock").css('opacity', '1');
@@ -312,6 +344,7 @@ if (isset($productId) && !empty($productId)) {
             complete: function(response) {
                 $("#progressBlock").css('opacity', '0');
                 response = response.responseText;
+                console.log(response);
                 var res_array = $.parseJSON(response);
                 //if user upload single image then these error will shown.
                 if (res_array.length === 1) {
@@ -365,67 +398,69 @@ if (isset($productId) && !empty($productId)) {
         $('#imageTempStep1Form').ajaxForm(options);
     }
 
-//    //set set preview
-//    function image_preview(res) {
-//        $("#busy-indicator").fadeOut();
-//        var obj = res; //JSON.parse(res);
-//        x_image_content = '<li id="item_' + obj.img_id + '"><div class="card_image"><div class="x_img_outer"><div class="x_img" style="display:;" onclick="delImage(' + obj.img_id + ')"></div></div><img src="' + obj.img_name + '"/></div></li>';
-//        $('#sortable').prepend(x_image_content);
-//        $('#ProductId').val(obj.product_id);
-//        product_id = obj.product_id;
-//        newupload();
-//        coverPhoto();
-//        sortable_image();
-//        $('.percent').html('0%');
-//        $('.bar').width('0%');
-//    }
-//
-//    $(function() {
-//        newupload();
-//        sortable_image();
-//    });
-//    function sortable_image() {
-//        $("#sortable").sortable({
-//            start: function(event, ui) {
-//                is_dragging = true;
-//            },
-//            stop: function(event, ui) {
-//                is_dragging = false;
-//            },
-//            opacity: 0.8,
-//            cursor: 'move',
-//            update: function() {
-//
-//                var order = $(this).sortable("serialize");
-//                $.post("<?php echo $this->Html->url(array("controller" => "products", "action" => "updateorder")); ?>", order, function(theResponse) {
-//                    coverPhoto();
-//                });
-//            }
-//        });
-//    }
-//    ;
-//    function delImage(Photo_id) {
-//        bootbox.confirm('Are you sure you want to delete this image?', function(r) {
-//            if (r == true) {
-//                URL = '<?php echo $this->Html->url(array("controller" => "products", "action" => "deletePhoto")); ?>';
-//                $.ajax({
-//                    url: URL,
-//                    method: 'POST',
-//                    data: ({Photo_id: Photo_id}),
-//                    success: function(data) {
-//                        $("#item_" + Photo_id).remove();
-//                        sortable_image();
-//                    }
-//                });
-//            }
-//        });
-//    }
-//    ;
-//    var cover_photo = '<div class="cover_photo" title="To change cover photo drag desire image at first position.">First Photo</div>';
-//    function coverPhoto() {
-//        $(".cover_photo").remove();
-//        $("#sortable li:eq(0)").append(cover_photo);
-//    }
+    //set set preview
+    function image_preview(res) {
+        $("#busy-indicator").fadeOut();
+        var obj = res; //JSON.parse(res);
+        x_image_content = '<li id="item_' + obj.img_id + '"><div class="card_image"><div class="x_img_outer"><div class="x_img" style="display:;" onclick="delImage(' + obj.img_id + ')"></div></div><img src="' + obj.img_name + '"/></div></li>';
+        $('#sortable').prepend(x_image_content);
+        $('#ProductId').val(obj.product_id);
+        product_id = obj.product_id;
+        newupload();
+        coverPhoto();
+        sortable_image();
+        $('.percent').html('0%');
+        $('.bar').width('0%');
+    }
+
+    $(function() {
+        newupload();
+        sortable_image();
+    });
+    function sortable_image() {
+        $("#sortable").sortable({
+            start: function(event, ui) {
+                is_dragging = true;
+            },
+            stop: function(event, ui) {
+                is_dragging = false;
+            },
+            opacity: 0.8,
+            cursor: 'move',
+            update: function() {
+
+                var order = $(this).sortable("serialize");
+                $.post("<?php echo $this->Html->url(array("controller" => "products", "action" => "updateorder")); ?>", order, function(theResponse) {
+                    coverPhoto();
+                });
+            }
+        });
+    }
+    ;
+    function delImage(Photo_id) {
+        bootbox.confirm('Are you sure you want to delete this image?', function(r) {
+            if (r == true) {
+                URL = '<?php echo $this->Html->url(array('admin' => true, "controller" => "products", "action" => "deletePhoto")); ?>';
+            //    alert(Photo_id);
+                $.ajax({
+                    url: URL,
+                    method: 'POST',
+                    data: ({Photo_id: Photo_id}),
+                    success: function(data) {
+                       // console.log(data);
+                        $("#item_" + Photo_id).remove();
+                        sortable_image();
+                    }
+                });
+            }
+        });
+    }
+    ;
+    var cover_photo = '<div class="cover_photo" title="To change cover photo drag desire image at first position.">First Photo</div>';
+    function coverPhoto() {
+        $(".cover_photo").remove();
+        $("#sortable li:eq(0)").append(cover_photo);
+    }
 
 </script>
 
