@@ -1,5 +1,5 @@
 <?php
-//prd($product_image);
+//prd($this->request->data);
 echo $this->Html->script('jquery.form.min');
 ?>  
 <?php
@@ -32,23 +32,23 @@ if (isset($productId) && !empty($productId)) {
             <!-- Custom Tabs -->
             <div class="nav-tabs-custom">
                 <ul class="nav nav-tabs">
-                    <li class="active"><a href="#tab_1" data-toggle="tab">Part 1</a></li>
-                    <li><a href="#tab_2" data-toggle="tab">Part 2</a></li>
-                    <li><a href="#tab_3" data-toggle="tab">Part 3</a></li>
-                    <li><a href="#tab_4" data-toggle="tab">Part 4</a></li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                            Dropdown <span class="caret"></span>
+                    <li class="active"><a href="#tab_1" data-toggle="tab">Basic Information</a></li>
+                    <li><a href="#tab_2" data-toggle="tab">Basic Information (2)</a></li>
+                    <li><a href="#tab_3" data-toggle="tab">Product Images</a></li>
+                    <?php
+                    if ($this->request->data['Product']['multiple_parts']) {
+                        ?>
+                        <li><a href="#tab_4" data-toggle="tab">Multiple Parts</a></li>
+                        <?php
+                    }
+                    ?>
+
+
+                    <li class="pull-right">
+                        <a href="#" class="text-muted">
+                            <i class="fa fa-gear"></i>
                         </a>
-                        <ul class="dropdown-menu">
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-                            <li role="presentation" class="divider"></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
-                        </ul>
                     </li>
-                    <li class="pull-right"><a href="#" class="text-muted"><i class="fa fa-gear"></i></a></li>
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane active" id="tab_1">
@@ -136,6 +136,73 @@ if (isset($productId) && !empty($productId)) {
                                         ?>
                                     </div>
                                 </div>
+                                <div class="form-group">
+                                    <label  class="col-sm-2 control-label">Net Size</label>
+                                    <div class="col-sm-10">
+                                        <?php
+                                        echo $this->Form->input('net_size', array(
+                                            'class' => 'form-control',
+                                            'label' => false,
+                                            'placeholder' => 'Only Number allowed',
+                                            'required' => true
+                                        ));
+                                        ?>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label  class="col-sm-2 control-label">Finish Type</label>
+                                    <div class="col-sm-10">
+                                        <?php
+                                        $material = array(
+                                            'Other' => 'Other',
+                                            'Bamboo' => 'Bamboo',
+                                            'Fabric' => 'Fabric',
+                                            'Genuine Leather' => 'Genuine Leather',
+                                            'Glass' => 'Glass',
+                                            'Metal' => 'Metal',
+                                            'Plastic' => 'Plastic',
+                                            'Rattan/Wicker' => 'Rattan/Wicker',
+                                            'Synthetic Leather' => 'Synthetic Leather',
+                                            'Wooden' => 'Wooden');
+
+                                        echo $this->Form->input('finishing_type', array(
+                                            'label' => false,
+                                            'class' => 'form-control',
+                                            'options' => $material,
+                                        ));
+                                        ?>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label  class="col-sm-2 control-label">Multiple Parts</label>
+                                    <div class="col-sm-10">
+                                        <?php
+                                        $optionsData = array(
+                                            '0' => 'No',
+                                            '1' => 'Yes',
+                                        );
+                                        echo $this->Form->input('multiple_parts', array(
+                                            'label' => false,
+                                            'class' => 'form-control',
+                                            'options' => $optionsData,
+                                        ));
+                                        ?>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label  class="col-sm-2 control-label">Keywords</label>
+                                    <div class="col-sm-10">
+                                        <?php
+                                        echo $this->Form->input('keywords', array(
+                                            'label' => false,
+                                            'class' => 'form-control',
+                                            'placeholder' => "Keywords if any for SEO purpose."
+                                        ));
+                                        ?>
+                                    </div>
+                                </div>
                             </div>
                             <!-- /.box-body -->
                             <div class="box-footer">
@@ -169,11 +236,14 @@ if (isset($productId) && !empty($productId)) {
                         <!-- /.box -->
                     </div>
                     <div class="tab-pane" id="tab_3">
+
                         <!-- Horizontal Form -->
                         <div class="box box-info">
                             <div class="box-header with-border">
                                 <h3 class="box-title">Upload Images</h3>
                             </div>
+                            <b>How to use:</b>
+                            <p>First image will be cover image, you can drag/move any image  to make it first.</p>
                             <!-- /.box-header -->
                             <!-- form start -->
                             <?php
@@ -200,23 +270,6 @@ if (isset($productId) && !empty($productId)) {
                                 <div class="form-group">
                                     <!--<label class="col-md-3 control-label"><h4>Upload Images</h4></label>-->
                                     <div class="col-sm-12">
-                                        <!--                                        <div class="timeline-item">
-                                                                                    <div class="timeline-body">
-                                        <?php
-//                                                if (isset($product_image[0])) {
-//                                                    foreach ($product_image as $image) {
-//                                                        
-                                        ?>
-                                                                                                //<?php // echo $this->Image->resize('admin_uploads/' . $image['ProductImage']['product_image'], 150, 100, null, array('class' => "margin"));  ?>
-                                                                                                //<?php
-//                                                    }
-//                                                }
-                                        ?>
-                                                                                    </div>  
-                                                                                </div>-->
-
-
-
                                         <div id="images">
                                             <ul id="sortable">
                                                 <?php
@@ -228,7 +281,7 @@ if (isset($productId) && !empty($productId)) {
                                                                 <div class="x_img_outer">
                                                                     <div class="x_img" style="" onclick="delImage('<?php echo $image['ProductImage']['id']; ?>')"></div>
                                                                 </div>
-        <?php echo $this->Image->resize('admin_uploads/' . $image['ProductImage']['product_image'], 150, 100); ?>
+                                                                <?php echo $this->Image->resize('admin_uploads/' . $image['ProductImage']['product_image'], 150, 100); ?>
                                                             </div>
                                                         </li>
                                                         <?php
@@ -238,8 +291,8 @@ if (isset($productId) && !empty($productId)) {
                                             </ul>
                                         </div>
                                         <div style="clear:both"></div>
-                                        <div onclick="$('#newImage').click();"  class="goyal btn btn-success btn-md btn-block">Upload Images</div>
-                                        <div class="info-text" >First image will be cover image, you can drag image to make it first. </div>
+                                        <!--                                        <div onclick="$('#newImage').click();"  class="goyal btn btn-success btn-md btn-block">Upload Images</div>-->
+
                                     </div>
 
                                 </div> 
@@ -248,10 +301,11 @@ if (isset($productId) && !empty($productId)) {
                             </div>
                             <!-- /.box-body -->
                             <div class="box-footer">
+                                <div onclick="$('#newImage').click();"  class="btn btn-info pull-right">Upload Images</div>
                                 <?php
-                                echo $this->Form->submit('Update', array(
-                                    'class' => 'btn btn-info pull-right',
-                                ));
+//                                echo $this->Form->submit('Update', array(
+//                                    'class' => 'btn btn-info pull-right',
+//                                ));
                                 ?>
 
 
@@ -277,7 +331,7 @@ if (isset($productId) && !empty($productId)) {
             <!-- nav-tabs-custom -->
         </div>
         <!-- /.col -->
-            <?php echo $this->Form->create('imageTemp', array('type' => 'file', 'id' => 'imageTempStep1Form')); ?>
+        <?php echo $this->Form->create('imageTemp', array('type' => 'file', 'id' => 'imageTempStep1Form')); ?>
         <label style="display:none" class="">
             <?php
             echo $this->Form->input('uploadfile.', array(
@@ -300,7 +354,27 @@ if (isset($productId) && !empty($productId)) {
 <?php echo $this->Form->end(); ?>
 <script>
     jQuery(document).ready(function($) {
-        //  alert($('#ProductId').val());
+        var validator = $('#ProductAdminEditForm').validate({
+            // initialize the plugin
+            rules: {
+                "data[Product][height]": {
+                    required: true,
+                    number: true,
+                },
+                "data[Product][width]": {
+                    number: true,
+                    required: true,
+                },
+                "data[Product][length]": {
+                    number: true,
+                    required: true,
+                },
+                "data[Product][net_size]": {
+                    number: true,
+                    required: true,
+                }
+            }
+        });
     });
     function newupload() {
         //alert("I am in");
@@ -430,7 +504,7 @@ if (isset($productId) && !empty($productId)) {
             update: function() {
 
                 var order = $(this).sortable("serialize");
-                $.post("<?php echo $this->Html->url(array("controller" => "products", "action" => "updateorder")); ?>", order, function(theResponse) {
+                $.post("<?php echo $this->Html->url(array("admin" => true, "controller" => "products", "action" => "updateorder")); ?>", order, function(theResponse) {
                     coverPhoto();
                 });
             }
@@ -441,13 +515,13 @@ if (isset($productId) && !empty($productId)) {
         bootbox.confirm('Are you sure you want to delete this image?', function(r) {
             if (r == true) {
                 URL = '<?php echo $this->Html->url(array('admin' => true, "controller" => "products", "action" => "deletePhoto")); ?>';
-            //    alert(Photo_id);
+                //    alert(Photo_id);
                 $.ajax({
                     url: URL,
                     method: 'POST',
                     data: ({Photo_id: Photo_id}),
                     success: function(data) {
-                       // console.log(data);
+                        // console.log(data);
                         $("#item_" + Photo_id).remove();
                         sortable_image();
                     }

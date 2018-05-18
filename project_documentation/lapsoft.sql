@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: May 04, 2018 at 06:51 PM
+-- Generation Time: May 17, 2018 at 05:11 PM
 -- Server version: 5.5.16
 -- PHP Version: 5.3.8
 
@@ -19,6 +19,23 @@ SET time_zone = "+00:00";
 --
 -- Database: `lapsoft`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `buyers`
+--
+
+CREATE TABLE IF NOT EXISTS `buyers` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `contact` varchar(15) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `address` text NOT NULL,
+  `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `status` int(11) NOT NULL DEFAULT '1' COMMENT '1 = active, 0 = inactive',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -60,7 +77,7 @@ CREATE TABLE IF NOT EXISTS `products` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `product_code` varchar(25) NOT NULL,
   `product_title` varchar(100) NOT NULL,
-  `decription` text NOT NULL,
+  `description` text NOT NULL,
   `height` int(11) NOT NULL,
   `width` int(11) NOT NULL,
   `length` int(11) NOT NULL,
@@ -76,7 +93,15 @@ CREATE TABLE IF NOT EXISTS `products` (
   `modified` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   `status` tinyint(2) NOT NULL COMMENT '"0"=>"inactive","1"=>"inactive","2"=>''deleted''',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `products`
+--
+
+INSERT INTO `products` (`id`, `product_code`, `product_title`, `description`, `height`, `width`, `length`, `cbm`, `cbf`, `special_instruction`, `special_instruction_file`, `assembly_instruction`, `assembly_instruction_file`, `finishing_type`, `image`, `created`, `modified`, `status`) VALUES
+(1, '', 'Test Product', 'Test PRoduct', 80, 70, 50, 0, 0, 'test data', '052018_5626.pdf', 'test data', '052018_6300.pdf', '', '', '2018-05-15 18:30:00', '2018-05-16 12:46:20', 0),
+(2, '', 'Test Product 2', 'New Product', 10, 200, 74, 0, 0, '', '', '', '', '', '', '2018-05-13 14:54:44', '2018-05-13 14:54:44', 0);
 
 -- --------------------------------------------------------
 
@@ -88,9 +113,23 @@ CREATE TABLE IF NOT EXISTS `product_images` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `product_id` int(11) NOT NULL,
   `product_image` varchar(255) NOT NULL,
+  `order` int(11) NOT NULL,
   `status` tinyint(2) NOT NULL COMMENT '"0"=>''''inactive","1"=>''''active","2"=>''''deleted"',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=18 ;
+
+--
+-- Dumping data for table `product_images`
+--
+
+INSERT INTO `product_images` (`id`, `product_id`, `product_image`, `order`, `status`) VALUES
+(1, 2, '', 0, 0),
+(7, 1, '20180515192318_5afb1786b8973.jpg', 6, 0),
+(9, 1, '20180516171138_5afc4a2a04ff6.jpg', 8, 0),
+(10, 1, '20180516173505_5afc4fa98a1da.jpg', 9, 0),
+(11, 1, '20180516180921_5afc57b1a39b1.jpg', 10, 0),
+(16, 1, '20180516181611_5afc594b29b6a.jpg', 15, 0),
+(17, 1, '20180516181620_5afc595453585.jpg', 16, 0);
 
 -- --------------------------------------------------------
 
@@ -139,6 +178,23 @@ INSERT INTO `sitesettings` (`id`, `title`, `key`, `value`, `status`) VALUES
 (10, 'Registered address', 'Site.registeredaddress', 'Lariya Village, Pal Chopasni <br>Ring Road - Jodhpur <br> Rajasthan INDIA 342008', 1),
 (11, 'Music File', 'Site.musicfile', '3553', 0),
 (12, 'Music Play', 'Site.play', '1', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `suppliers`
+--
+
+CREATE TABLE IF NOT EXISTS `suppliers` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `contact` varchar(15) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `address` text NOT NULL,
+  `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `status` int(11) NOT NULL DEFAULT '1' COMMENT '1 = active, 0 = inactive',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
