@@ -73,8 +73,9 @@ class ProductsController extends AppController {
         $productData = $this->Product->find('first', array(
             'conditions' => array($condition),
         ));
-        // prd($productData);
+        //  prd($productData);
         $postData = $this->request->data;
+
         if (isset($postData) && !empty($postData)) {
             //prd($postData);
 
@@ -243,7 +244,7 @@ class ProductsController extends AppController {
             $imageName = $this->ProductImage->find('first', array('conditions' =>
                 array('ProductImage.id' => $prdId),
                 'fields' => 'ProductImage.product_image'));
-          //  prd($imageName);
+            //  prd($imageName);
             if (file_exists(WWW_ROOT . 'img/admin_uploads/' . $imageName['ProductImage']['product_image'])) {
                 unlink('img/admin_uploads/' . $imageName['ProductImage']['product_image']);
             }
@@ -255,7 +256,39 @@ class ProductsController extends AppController {
             exit;
         } else {
             $this->siteMessage("INVALID_REQUEST_DATA", array("[['data']]" => 'location'));
-            $this->redirect(array('eshop' => false, 'controller' => 'products', 'action' => 'add'));
+            $this->redirect(array('admin' => true, 'controller' => 'products', 'action' => 'add'));
+        }
+    }
+
+    public function admin_updateorder() {
+        if (isset($this->request['data']['item']) && !empty($this->request['data']['item'])) {
+            $count = 1;
+            $this->loadModel('ProductImage');
+            foreach ($this->request['data']['item'] as $val) {
+                //to update product table
+                $data = array();
+                $data['ProductImage']['id'] = $val;
+                $data['ProductImage']['order'] = $count;
+                $this->ProductImage->save($data);
+                if ($count == 1)
+                    $this->updateCardImage(0, $val);
+                $count++;
+            }
+            exit;
+        }
+    }
+
+    //to update product image in card photo table
+    protected function updateCardImage($card_id = 0, $image_id = 0) {
+        if (!empty($image_id)) {
+            $this->loadModel('Product');
+            $this->loadModel('ProductImage');
+            $image_name = $this->ProductImage->findById($image_id);
+            if (isset($image_name['ProductImage']) && !empty($image_name['ProductImage']['product_image'])) {
+                $card_array['id'] = $image_name['ProductImage']['product_id'];
+                $card_array['main_photo'] = $image_name['ProductImage']['product_image'];
+                $this->ProductImage->save($card_array);
+            }
         }
     }
 
