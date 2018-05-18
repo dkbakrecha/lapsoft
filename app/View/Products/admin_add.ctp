@@ -1,5 +1,4 @@
 
-ss
 <?php
 if (isset($productId) && !empty($productId)) {
     echo $productId;
@@ -30,33 +29,14 @@ if (isset($productId) && !empty($productId)) {
             <!-- Custom Tabs -->
             <div class="nav-tabs-custom">
                 <ul class="nav nav-tabs">
-                    <li class="active"><a href="#tab_1" data-toggle="tab">Part 1</a></li>
-                    <?php
-                    if (isset($productId) && !empty($productId)) {
-                        ?>
-                        <li><a href="#tab_2" data-toggle="tab">Part 2</a></li>
-                        <?php
-                    } else {
-                        ?>
-                        <li><a href="#" >Part 2</a></li>
-                        <?php
-                    }
-                    ?>
-                    <li><a href="#tab_2" data-toggle="tab">Part 2</a></li>
-                    <li><a href="#tab_3" data-toggle="tab">Part 3</a></li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                            Dropdown <span class="caret"></span>
+                    <li class="active"><a href="#tab_1" data-toggle="tab">Basic Information</a></li>
+                    <li><a href="#tab_2" data-toggle="tab">Basic Information (2)</a></li>
+                    <li><a href="#tab_3" data-toggle="tab">Product Images</a></li>
+                    <li class="pull-right">
+                        <a href="#" class="text-muted">
+                            <i class="fa fa-gear"></i>
                         </a>
-                        <ul class="dropdown-menu">
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-                            <li role="presentation" class="divider"></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
-                        </ul>
                     </li>
-                    <li class="pull-right"><a href="#" class="text-muted"><i class="fa fa-gear"></i></a></li>
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane active" id="tab_1">
@@ -236,7 +216,7 @@ if (isset($productId) && !empty($productId)) {
                                         ?>
                                     </div>
                                 </div>
-                             
+
                                 <!--                                    <div class="form-group">
                                                                         <div class="col-sm-offset-2 col-sm-10">
                                                                             <div class="checkbox">
