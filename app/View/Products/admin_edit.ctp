@@ -3,8 +3,8 @@
 echo $this->Html->script('jquery.form.min');
 ?>  
 <?php
-if (isset($productId) && !empty($productId)) {
-    echo $productId;
+if (isset($this->request->data['Product']['id']) && !empty($this->request->data['Product']['id'])) {
+    $productId = $this->request->data['Product']['id'];
 }
 ?>
 <section class="content-header">
@@ -229,8 +229,92 @@ if (isset($productId) && !empty($productId)) {
                         <!-- Horizontal Form -->
                         <div class="box box-info">
                             <div class="box-header with-border">
-                                <h3 class="box-title">Other Informations</h3>
+                                <h3 class="box-title">Other Information</h3>
                             </div>
+                            <!-- /.box-header -->
+                            <!-- form start -->
+                            <?php
+                            echo $this->Form->create('Product', array(
+                                'role' => 'form',
+                                'div' => false,
+                                'class' => 'form-horizontal',
+                                'url' => array('admin' => true, 'action' => 'add')));
+                            echo $this->Form->input('id', array('value' => $productId, 'hidden'))
+                            ?>
+                            <div class="box-body">
+                                <div class="form-group">
+                                    <label  class="col-sm-2 control-label">Assembly Instructions</label>
+                                    <div class="col-sm-10">
+                                        <?php
+                                        echo $this->Form->input('assembly_instruction', array(
+                                            'class' => 'form-control',
+                                            'placeholder' => '',
+                                            'label' => false,
+                                        ));
+                                        ?>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label  class="col-sm-2 control-label">Assembly Instruction File</label>
+                                    <div class="col-sm-10">
+                                        <?php
+                                        echo $this->Form->input('assembly_instruction_file', array(
+                                            'class' => 'form-control',
+                                            'div' => false,
+                                            'label' => false,
+                                            'type' => 'file'
+                                        ));
+                                        ?>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label  class="col-sm-2 control-label">Special Instruction</label>
+                                    <div class="col-sm-10">
+                                        <?php
+                                        echo $this->Form->input('special_instruction', array(
+                                            'class' => 'form-control',
+                                            'label' => false,
+                                        ));
+                                        ?>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label  class="col-sm-2 control-label">Special Instruction File</label>
+                                    <div class="col-sm-10">
+                                        <?php
+                                        echo $this->Form->input('width', array(
+                                            'class' => 'form-control',
+                                            'label' => false,
+                                        ));
+                                        ?>
+                                    </div>
+                                </div>
+
+                                <!--                                    <div class="form-group">
+                                                                        <div class="col-sm-offset-2 col-sm-10">
+                                                                            <div class="checkbox">
+                                                                                <label>
+                                                                                    <input type="checkbox"> Remember me
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                -->
+                            </div>
+                            <!-- /.box-body -->
+                            <div class="box-footer">
+                                <!--                                    <button type="submit" class="btn btn-default">Cancel</button>-->
+                                <?php
+                                echo $this->Form->submit('Save', array(
+                                    'class' => 'btn btn-info pull-right',
+                                ));
+                                ?>
+                                <!--<button type="submit" class="btn btn-info pull-right">Save</button>-->
+                            </div>
+                            <?php
+                            echo $this->Form->end();
+                            ?>
+                            <!-- /.box-footer -->
 
                         </div>
                         <!-- /.box -->

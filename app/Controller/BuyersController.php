@@ -45,14 +45,14 @@ class BuyersController extends AppController {
             //prd($condition);
             $total_records = $this->Buyer->find('count', array('conditions' => $condition));
 
-            $fields = array('Buyer.id', 'Buyer.name', 'Buyer.contact', 'Buyer.email',  'Buyer.created', 'Buyer.status');
+            $fields = array('Buyer.id', 'Buyer.name', 'Buyer.contact', 'Buyer.email', 'Buyer.created', 'Buyer.status');
             $userData = $this->Buyer->find('all', array(
                 'conditions' => $condition,
                 'fields' => $fields,
                 'order' => $orderby,
                 'limit' => $limit,
                 'offset' => $start
-                    ));
+            ));
 
             $return_result['draw'] = $page;
             $return_result['recordsTotal'] = $total_records;
@@ -76,9 +76,8 @@ class BuyersController extends AppController {
                     }
 
                     //$action .= '&nbsp;&nbsp;&nbsp;<a href="#"><i class="fa fa-eye fa-lg"></i></a> ';
-
-                   // $action .= '&nbsp;&nbsp;&nbsp;<a href="' . $this->webroot . 'suppliers/view/' . $row['Buyer']['title_slug'] . '" title="View Post" target="_BLANK"><i class="fa fa-eye fa-lg"></i></a> ';
-                    $action .= '&nbsp;&nbsp;&nbsp;<a href="' . $this->webroot . 'admin/suppliers/edit/' . $row['Buyer']['id'] . '" title="Edit Buyer"><i class="fa fa-pencil fa-lg"></i></a> ';
+                    // $action .= '&nbsp;&nbsp;&nbsp;<a href="' . $this->webroot . 'suppliers/view/' . $row['Buyer']['title_slug'] . '" title="View Post" target="_BLANK"><i class="fa fa-eye fa-lg"></i></a> ';
+                    $action .= '&nbsp;&nbsp;&nbsp;<a href="' . $this->webroot . 'admin/buyers/edit/' . $row['Buyer']['id'] . '" title="Edit Buyer"><i class="fa fa-pencil fa-lg"></i></a> ';
 
                     $action .= '&nbsp;&nbsp;&nbsp; <a href="#" onclick="delete_user(' . $row['Buyer']['id'] . ')" title="Delete User"><i class="fa fa-trash fa-lg"></i></a>';
 
@@ -99,7 +98,7 @@ class BuyersController extends AppController {
             // pr($return_result);
             echo json_encode($return_result);
             exit;
-        } 
+        }
     }
 
     public function admin_add() {
@@ -108,12 +107,10 @@ class BuyersController extends AppController {
 
             $this->Buyer->create();
             if ($this->Buyer->save($postData)) {
-                $this->Session->setFlash(__('The Buyer has been saved'));
+                $this->flash_msg('The Buyer details has been saved.', 1);
                 return $this->redirect(array('action' => 'index'));
             }
-            $this->Session->setFlash(
-                    __('The Buyer could not be saved. Please, try again.')
-            );
+            $this->flash_msg('The Buyer could not be saved. Please, try again.', 2);
         }
     }
 
@@ -122,12 +119,10 @@ class BuyersController extends AppController {
             $postData = $this->request->data;
 
             if ($this->Buyer->save($postData)) {
-                $this->Session->setFlash(__('The Buyer has been Updated'));
+                $this->flash_msg('The buyer details has been updated.', 1);
                 return $this->redirect(array('action' => 'index'));
             }
-            $this->Session->setFlash(
-                    __('The Buyer could not be saved. Please, try again.')
-            );
+            $this->flash_msg('The buyer could not be saved. Please, try again.', 2);
         }
 
         $this->request->data = $this->Buyer->find('first', array('conditions' => array('Buyer.id' => $id)));

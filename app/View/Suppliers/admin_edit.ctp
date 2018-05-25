@@ -1,13 +1,27 @@
-<div class="warper container-fluid">
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            Add New Post
-            <a class='btn btn-purple btn-sm pull-right' href='<?php
-echo $this->Html->url(array('controller' => 'suppliers', 'action' => 'index',
-    'admin' => true));
-?>'>Back</a>
+<section class="content-header">
+    <h1>
+        Supplier
+        <small><!--Preview of UI elements --></small>
+    </h1>
+    <ol class="breadcrumb">
+        <li>
+            <a href="<?php echo $this->Html->url(array('admin' => true, 'controller' => 'users', 'action' => 'dashboard')); ?>">
+                <i class="fa fa-dashboard"></i>Home</a>
+        </li>
+        <li>
+            <a href="<?php echo $this->Html->url(array('admin' => true, 'controller' => 'buyers', 'action' => 'index')); ?>">Client Master</a>
+        </li>
+        <li class="active">Add</li>
+    </ol>
+</section>
+
+<section class="content">
+    <div class="box box-info">
+        <div class="box-header with-border">
+            <h3 class="box-title">Edit Supplier Information</h3>
         </div>
-        <div class="panel-body">
+
+        <div class="box-body">
             <div class="form-horizontal" >
                 <?php
                 echo $this->Form->create('Supplier', array("role" => "form"));
@@ -66,30 +80,26 @@ echo $this->Html->url(array('controller' => 'suppliers', 'action' => 'index',
                 </div>
 
 
-                <div class="form-group">
-                    <div class="col-md-2 col-sm-4 col-xs-12 control-label">
-                        <span></span>
-                    </div>
-                    <div class="col-md-5 col-sm-6 col-xs-12">
-                        <?=
-                        $this->Form->button(__('Save'), array(
-                        'class' => 'btn btn-primary btn-flat',
+                <div class="box-footer">
+                    <?php
+                    echo $this->Form->button(__('Save'), array(
+                        'class' => 'btn btn-info pull-right',
                         'type' => 'submit'
-                        ));
-                        ?>
-                        &nbsp;
-                        <?=
-                        $this->Form->button(__('Cancel'), array(
-                        'class' => 'btn btn-default btn-flat',
+                    ));
+
+                    echo $this->Form->button(__('Cancel'), array(
+                        'class' => 'btn btn-default',
                         'type' => 'button',
                         'onclick' => 'goBack()',
-                        ));
-                        ?>
-                    </div>
+                    ));
+                    ?>
+
                 </div>
 
 
                 <?php echo $this->Form->end(); ?>
             </div>
+
         </div>
     </div>
+</section>
