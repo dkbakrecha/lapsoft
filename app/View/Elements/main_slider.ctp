@@ -1,3 +1,6 @@
+<?php
+//Test
+?>
 <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
@@ -43,7 +46,7 @@
                 </ul>
             </li>
                 <li class=" treeview">
-                <a href="#">
+                <a href="<?php echo $this->Html->url(array('admin' => true, 'controller' => 'purchase_orders', 'action' => 'create')); ?>">
                     <i class="fa fa-file"></i> <span>PO Buyer</span>
                 </a>
                 
@@ -54,5 +57,4 @@
             
         </ul>
     </section>
-    <!-- /.sidebar -->
 </aside>
