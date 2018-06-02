@@ -1,3 +1,6 @@
+<?php
+//Test
+?>
 <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
@@ -36,32 +39,17 @@
                     </li>
                     <li>
                         <a href="<?php echo $this->Html->url(array('admin' => true, 'controller' => 'products', 'action' => 'index')); ?>">
-                            <i class="fa fa-circle-o"></i>Edit Product
+                            <i class="fa fa-circle-o"></i>Product List
                         </a>
                     </li>
-                    <li class="treeview">
-                        <a href="#"><i class="fa fa-circle-o"></i> Level One
-                            <span class="pull-right-container">
-                                <i class="fa fa-angle-left pull-right"></i>
-                            </span>
-                        </a>
-                        <ul class="treeview-menu">
-                            <li><a href="#"><i class="fa fa-circle-o"></i> Level Two</a></li>
-                            <li class="treeview">
-                                <a href="#"><i class="fa fa-circle-o"></i> Level Two
-                                    <span class="pull-right-container">
-                                        <i class="fa fa-angle-left pull-right"></i>
-                                    </span>
-                                </a>
-                                <ul class="treeview-menu">
-                                    <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
-                                    <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
+                    
                 </ul>
+            </li>
+                <li class=" treeview">
+                <a href="<?php echo $this->Html->url(array('admin' => true, 'controller' => 'purchase_orders', 'action' => 'create')); ?>">
+                    <i class="fa fa-file"></i> <span>PO Buyer</span>
+                </a>
+                
             </li>
           
             
@@ -69,5 +57,4 @@
             
         </ul>
     </section>
-    <!-- /.sidebar -->
 </aside>
