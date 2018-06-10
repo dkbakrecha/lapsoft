@@ -134,8 +134,17 @@ class PurchaseOrdersController extends AppController {
     }
     
     
-	public function admin_create() {
-
+	public function admin_add_edit($id = null) {
+            $request = $this->request;
+            $this->loadModel('Buyer');
+            $buyerList = $this->Buyer->find('list');
+            
+            if($request->is('post')){
+                $data = $request->data;
+                $this->PurchaseOrder->save($data);
+            }
+            $this->set("buyerList", $buyerList);
+            
 	}
 
 

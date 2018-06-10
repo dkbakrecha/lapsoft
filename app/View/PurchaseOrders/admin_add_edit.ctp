@@ -17,9 +17,10 @@ echo $this->Html->url(array('controller' => 'purchase_orders', 'action' => 'inde
                     <div class="col-sm-3">
                         <?php
                         echo $this->Form->input('po_id', array(
+                            'type' => 'textbox',
                             'class' => 'form-control',
                             'label' => false,
-                            'placeholder' => 'Name'
+                            'placeholder' => 'Order Number'
                         ));
                         ?>
                     </div>
@@ -30,9 +31,10 @@ echo $this->Html->url(array('controller' => 'purchase_orders', 'action' => 'inde
                     <div class="col-sm-3">
                         <?php
                         echo $this->Form->input('create_date', array(
-                            'class' => 'form-control',
+                            'type' => 'textbox',
+                            'class' => 'form-control calendar',
                             'label' => false,
-                            'placeholder' => 'Name'
+                            'placeholder' => 'Order Date'
                         ));
                         ?>
                     </div>
@@ -43,9 +45,10 @@ echo $this->Html->url(array('controller' => 'purchase_orders', 'action' => 'inde
                     <div class="col-sm-3">
                         <?php
                         echo $this->Form->input('delivery_date', array(
-                            'class' => 'form-control',
+                            'type' => 'textbox',
+                            'class' => 'form-control calendar',
                             'label' => false,
-                            'placeholder' => 'Contact',
+                            'placeholder' => 'Delivery Date',
                         ));
                         ?>
                     </div>
@@ -55,10 +58,11 @@ echo $this->Html->url(array('controller' => 'purchase_orders', 'action' => 'inde
                     <label class="col-sm-2 control-label">Buyer</label>
                     <div class="col-sm-3">
                         <?php
-                        echo $this->Form->input('email', array(
+                        echo $this->Form->input('buyer_id', array(
                             'class' => 'form-control',
                             'label' => false,
-                            'placeholder' => 'Email address',
+                            'placeholder' => 'Buyers',
+                            'options' => $buyerList
                         ));
                         ?>
                     </div>
@@ -94,5 +98,8 @@ echo $this->Html->url(array('controller' => 'purchase_orders', 'action' => 'inde
 </div>
 
 <script>
-    $('#calendar').datepicker();
+    $('.calendar').datepicker({
+        setDate: new Date(),
+        autoclose: true
+    });
 </script>

@@ -3,11 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/xampp/htdocs/lapsoft/app/View/Products/admin_edit.ctp</file>
-            <file>file:/D:/xampp/htdocs/lapsoft/app/webroot/css/admin_css/admin_css.css</file>
-            <file>file:/D:/xampp/htdocs/lapsoft/app/View/Layouts/default.ctp</file>
-            <file>file:/D:/xampp/htdocs/lapsoft/app/Controller/ProductsController.php</file>
-            <file>file:/D:/xampp/htdocs/lapsoft/app/Controller/AppController.php</file>
+            <file>file:/C:/xampp/htdocs/lapsoft/app/Controller/PurchaseOrdersController.php</file>
+            <file>file:/C:/xampp/htdocs/lapsoft/app/Model/PurchaseOrder.php</file>
+            <file>file:/C:/xampp/htdocs/lapsoft/app/View/Elements/header.ctp</file>
+            <file>file:/C:/xampp/htdocs/lapsoft/app/View/PurchaseOrders/admin_add_edit.ctp</file>
         </group>
     </open-files>
 </project-private>
