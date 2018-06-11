@@ -116,6 +116,7 @@ class ProductsController extends AppController {
 
         if (!empty($this->request->data)) {
             $data = $this->request->data;
+           // prd($data);
             if ($this->Product->save($data)) {
                 $productId = $this->Product->getLastInsertId();
                 $productImageData = array();
@@ -163,7 +164,7 @@ class ProductsController extends AppController {
         $postData = $this->request->data;
 
         if (isset($postData) && !empty($postData)) {
-            //prd($postData);
+          //  prd($postData);
 
             if (isset($postData['Product']['assembly_instruction_file']['name']) && !empty($postData['Product']['assembly_instruction_file']['name'])) {
                 $file_data = $postData['Product']['assembly_instruction_file'];

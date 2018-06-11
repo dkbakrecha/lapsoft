@@ -32,18 +32,16 @@ if (isset($this->request->data['Product']['id']) && !empty($this->request->data[
             <!-- Custom Tabs -->
             <div class="nav-tabs-custom">
                 <ul class="nav nav-tabs">
-                    <li class="active"><a href="#tab_1" data-toggle="tab">Basic Information</a></li>
+                    <li class="active"><a href="#tab_1" data-toggle="tab">Basic Information (1)</a></li>
                     <li><a href="#tab_2" data-toggle="tab">Basic Information (2)</a></li>
-                    <li><a href="#tab_3" data-toggle="tab">Product Images</a></li>
+                    <li><a href="#tab_3" data-toggle="tab">Product Images (3)</a></li>
                     <?php
                     if ($this->request->data['Product']['multiple_parts']) {
                         ?>
-                        <li><a href="#tab_4" data-toggle="tab">Multiple Parts</a></li>
+                        <li><a href="#tab_4" data-toggle="tab">Multiple Parts (4)</a></li>
                         <?php
                     }
                     ?>
-
-
                     <li class="pull-right">
                         <a href="#" class="text-muted">
                             <i class="fa fa-gear"></i>
@@ -236,9 +234,10 @@ if (isset($this->request->data['Product']['id']) && !empty($this->request->data[
                             <?php
                             echo $this->Form->create('Product', array(
                                 'role' => 'form',
+                                'type' => 'file',
                                 'div' => false,
                                 'class' => 'form-horizontal',
-                                'url' => array('admin' => true, 'action' => 'add')));
+                                'url' => array('admin' => true, 'action' => 'edit')));
                             echo $this->Form->input('id', array('value' => $productId, 'hidden'))
                             ?>
                             <div class="box-body">
@@ -282,24 +281,14 @@ if (isset($this->request->data['Product']['id']) && !empty($this->request->data[
                                     <label  class="col-sm-2 control-label">Special Instruction File</label>
                                     <div class="col-sm-10">
                                         <?php
-                                        echo $this->Form->input('width', array(
+                                        echo $this->Form->input('special_instruction_file', array(
                                             'class' => 'form-control',
+                                            'type' => 'file',
                                             'label' => false,
                                         ));
                                         ?>
                                     </div>
                                 </div>
-
-                                <!--                                    <div class="form-group">
-                                                                        <div class="col-sm-offset-2 col-sm-10">
-                                                                            <div class="checkbox">
-                                                                                <label>
-                                                                                    <input type="checkbox"> Remember me
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                -->
                             </div>
                             <!-- /.box-body -->
                             <div class="box-footer">

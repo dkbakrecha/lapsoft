@@ -29,9 +29,9 @@ if (isset($productId) && !empty($productId)) {
             <!-- Custom Tabs -->
             <div class="nav-tabs-custom">
                 <ul class="nav nav-tabs">
-                    <li class="active"><a href="#tab_1" data-toggle="tab">Basic Information</a></li>
-                    <li><a href="#tab_2" data-toggle="tab">Basic Information (2)</a></li>
-                    <li><a href="#tab_3" data-toggle="tab">Product Images</a></li>
+                    <li class="active"><a href="#tab_1" data-toggle="tab">Basic Information (1)</a></li>
+                    <li><a href="#" >Basic Information (2)</a></li>
+                    <li><a href="#" >Product Images (3)</a></li>
                     <li class="pull-right">
                         <a href="#" class="text-muted">
                             <i class="fa fa-gear"></i>
@@ -53,8 +53,7 @@ if (isset($productId) && !empty($productId)) {
                             echo $this->Form->create('Product', array(
                                 'role' => 'form',
                                 'div' => false,
-                                'class' => 'form-horizontal',
-                                'url' => array('action' => 'add')));
+                                'class' => 'form-horizontal',));
                             ?>
                             <div class="box-body">
 
@@ -123,138 +122,94 @@ if (isset($productId) && !empty($productId)) {
                                         ?>
                                     </div>
                                 </div>
-                                <!--                                    <div class="form-group">
-                                                                        <div class="col-sm-offset-2 col-sm-10">
-                                                                            <div class="checkbox">
-                                                                                <label>
-                                                                                    <input type="checkbox"> Remember me
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                -->
+                                <div class="form-group">
+                                    <label  class="col-sm-2 control-label">Net Size</label>
+                                    <div class="col-sm-10">
+                                        <?php
+                                        echo $this->Form->input('net_size', array(
+                                            'class' => 'form-control',
+                                            'label' => false,
+                                            'placeholder' => 'Only Number allowed',
+                                            'required' => true
+                                        ));
+                                        ?>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label  class="col-sm-2 control-label">Finish Type</label>
+                                    <div class="col-sm-10">
+                                        <?php
+                                        $material = array(
+                                            'Other' => 'Other',
+                                            'Bamboo' => 'Bamboo',
+                                            'Fabric' => 'Fabric',
+                                            'Genuine Leather' => 'Genuine Leather',
+                                            'Glass' => 'Glass',
+                                            'Metal' => 'Metal',
+                                            'Plastic' => 'Plastic',
+                                            'Rattan/Wicker' => 'Rattan/Wicker',
+                                            'Synthetic Leather' => 'Synthetic Leather',
+                                            'Wooden' => 'Wooden');
+
+                                        echo $this->Form->input('finishing_type', array(
+                                            'label' => false,
+                                            'class' => 'form-control',
+                                            'options' => $material,
+                                        ));
+                                        ?>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label  class="col-sm-2 control-label">Multiple Parts</label>
+                                    <div class="col-sm-10">
+                                        <?php
+                                        $optionsData = array(
+                                            '0' => 'No',
+                                            '1' => 'Yes',
+                                        );
+                                        echo $this->Form->input('multiple_parts', array(
+                                            'label' => false,
+                                            'class' => 'form-control',
+                                            'options' => $optionsData,
+                                        ));
+                                        ?>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label  class="col-sm-2 control-label">Keywords</label>
+                                    <div class="col-sm-10">
+                                        <?php
+                                        echo $this->Form->input('keywords', array(
+                                            'label' => false,
+                                            'class' => 'form-control',
+                                            'placeholder' => "Keywords if any for SEO purpose."
+                                        ));
+                                        ?>
+                                    </div>
+                                </div>
                             </div>
                             <!-- /.box-body -->
                             <div class="box-footer">
-                                <!--                                    <button type="submit" class="btn btn-default">Cancel</button>-->
                                 <?php
-                                echo $this->Form->submit('Save', array(
+                                echo $this->Form->submit('Update', array(
                                     'class' => 'btn btn-info pull-right',
                                 ));
                                 ?>
-                                <!--<button type="submit" class="btn btn-info pull-right">Save</button>-->
                             </div>
                             <?php
                             echo $this->Form->end();
                             ?>
                             <!-- /.box-footer -->
-
                         </div>
                         <!-- /.box -->
                     </div>
                     <!-- /.tab-pane -->
                     <div class="tab-pane" id="tab_2">
-                        <!-- Horizontal Form -->
-                        <div class="box box-info">
-                            <div class="box-header with-border">
-                                <h3 class="box-title">Other Information</h3>
-                            </div>
-                            <!-- /.box-header -->
-                            <!-- form start -->
-                            <?php
-                            echo $this->Form->create('Product', array(
-                                'role' => 'form',
-                                'div' => false,
-                                'class' => 'form-horizontal',
-                                'url' => array('admin' => true, 'action' => 'add')));
-                            echo $this->Form->input('id', array('value' => $productId, 'hidden'))
-                            ?>
-                            <div class="box-body">
-                                <div class="form-group">
-                                    <label  class="col-sm-2 control-label">Assembly Instructions</label>
-                                    <div class="col-sm-10">
-                                        <?php
-                                        echo $this->Form->input('assembly_instruction', array(
-                                            'class' => 'form-control',
-                                            'placeholder' => '',
-                                            'label' => false,
-                                        ));
-                                        ?>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label  class="col-sm-2 control-label">Assembly Instruction File</label>
-                                    <div class="col-sm-10">
-                                        <?php
-                                        echo $this->Form->input('assembly_instruction_file', array(
-                                            'class' => 'form-control',
-                                            'div' => false,
-                                            'label' => false
-                                        ));
-                                        ?>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label  class="col-sm-2 control-label">Special Instruction</label>
-                                    <div class="col-sm-10">
-                                        <?php
-                                        echo $this->Form->input('special_instruction', array(
-                                            'class' => 'form-control',
-                                            'label' => false,
-                                        ));
-                                        ?>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label  class="col-sm-2 control-label">Special Instruction File</label>
-                                    <div class="col-sm-10">
-                                        <?php
-                                        echo $this->Form->input('width', array(
-                                            'class' => 'form-control',
-                                            'label' => false,
-                                        ));
-                                        ?>
-                                    </div>
-                                </div>
-
-                                <!--                                    <div class="form-group">
-                                                                        <div class="col-sm-offset-2 col-sm-10">
-                                                                            <div class="checkbox">
-                                                                                <label>
-                                                                                    <input type="checkbox"> Remember me
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                -->
-                            </div>
-                            <!-- /.box-body -->
-                            <div class="box-footer">
-                                <!--                                    <button type="submit" class="btn btn-default">Cancel</button>-->
-                                <?php
-                                echo $this->Form->submit('Save', array(
-                                    'class' => 'btn btn-info pull-right',
-                                ));
-                                ?>
-                                <!--<button type="submit" class="btn btn-info pull-right">Save</button>-->
-                            </div>
-                            <?php
-                            echo $this->Form->end();
-                            ?>
-                            <!-- /.box-footer -->
-
-                        </div>
-                        <!-- /.box -->
                     </div>
                     <!-- /.tab-pane -->
                     <div class="tab-pane" id="tab_3">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                        It has survived not only five centuries, but also the leap into electronic typesetting,
-                        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-                        sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
-                        like Aldus PageMaker including versions of Lorem Ipsum.
                     </div>
                     <!-- /.tab-pane -->
                 </div>
