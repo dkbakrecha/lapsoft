@@ -21,7 +21,7 @@ class ProductsController extends AppController {
 
     public function admin_index() {
         $this->set('title_for_layout', 'All Product');
-        
+
         $request = $this->request;
 
         if ($request->is('ajax')) {
@@ -52,14 +52,14 @@ class ProductsController extends AppController {
             //prd($condition);
             $total_records = $this->Product->find('count', array('conditions' => $condition));
 
-            $fields = array('Product.id','Product.product_code', 'Product.product_title',  'Product.finishing_type','Product.image','Product.created', 'Product.status');
+            $fields = array('Product.id', 'Product.product_code', 'Product.product_title', 'Product.finishing_type', 'Product.image', 'Product.created', 'Product.status');
             $userData = $this->Product->find('all', array(
                 'conditions' => $condition,
                 'fields' => $fields,
                 'order' => $orderby,
                 'limit' => $limit,
                 'offset' => $start
-                    ));
+            ));
 
             $return_result['draw'] = $page;
             $return_result['recordsTotal'] = $total_records;
@@ -83,8 +83,7 @@ class ProductsController extends AppController {
                     }
 
                     //$action .= '&nbsp;&nbsp;&nbsp;<a href="#"><i class="fa fa-eye fa-lg"></i></a> ';
-
-                   // $action .= '&nbsp;&nbsp;&nbsp;<a href="' . $this->webroot . 'suppliers/view/' . $row['Buyer']['title_slug'] . '" title="View Post" target="_BLANK"><i class="fa fa-eye fa-lg"></i></a> ';
+                    // $action .= '&nbsp;&nbsp;&nbsp;<a href="' . $this->webroot . 'suppliers/view/' . $row['Buyer']['title_slug'] . '" title="View Post" target="_BLANK"><i class="fa fa-eye fa-lg"></i></a> ';
                     $action .= '&nbsp;&nbsp;&nbsp;<a href="' . $this->webroot . 'admin/products/edit/' . $row['Product']['id'] . '" title="Edit Buyer"><i class="fa fa-pencil fa-lg"></i></a> ';
 
                     $action .= '&nbsp;&nbsp;&nbsp; <a href="#" onclick="delete_user(' . $row['Product']['id'] . ')" title="Delete User"><i class="fa fa-trash fa-lg"></i></a>';
@@ -106,7 +105,7 @@ class ProductsController extends AppController {
             // pr($return_result);
             echo json_encode($return_result);
             exit;
-        } 
+        }
     }
 
     public function admin_add() {
@@ -116,6 +115,7 @@ class ProductsController extends AppController {
 
         if (!empty($this->request->data)) {
             $data = $this->request->data;
+            // prd($data);
             if ($this->Product->save($data)) {
                 $productId = $this->Product->getLastInsertId();
                 $productImageData = array();
@@ -163,13 +163,11 @@ class ProductsController extends AppController {
         $postData = $this->request->data;
 
         if (isset($postData) && !empty($postData)) {
-            //prd($postData);
-
             if (isset($postData['Product']['assembly_instruction_file']['name']) && !empty($postData['Product']['assembly_instruction_file']['name'])) {
                 $file_data = $postData['Product']['assembly_instruction_file'];
                 $allowedExt = array('pdf');
                 $SavePath = FILE_UPLOAD;
-                $fileSize = 1048576;  // 1 MB = 1048576 bytes 
+                $fileSize = 2097152;  // 2 MB = 2097152 bytes 
 
                 if ($this->fileUpload($file_data, $allowedExt, $SavePath, $fileSize)) {
                     $postData['Product']['assembly_instruction_file'] = Configure::read('newFileName');
@@ -185,7 +183,7 @@ class ProductsController extends AppController {
                 $file_data = $postData['Product']['special_instruction_file'];
                 $allowedExt = array('pdf');
                 $SavePath = FILE_UPLOAD;
-                $fileSize = 1048576;  // 1 MB = 1048576 bytes 
+                $fileSize = 2097152;  // 2 MB = 2097152 bytes 
 
                 if ($this->fileUpload($file_data, $allowedExt, $SavePath, $fileSize)) {
                     $postData['Product']['special_instruction_file'] = Configure::read('newFileName');
@@ -197,7 +195,7 @@ class ProductsController extends AppController {
                 $postData['Product']['special_instruction_file'] = $productData['Product']['special_instruction_file'];
             }
 
-            // pr($postData);
+            // prd($postData);
             if ($this->Product->save($postData)) {
                 $this->flash_msg('Information Updated', 1);
                 $this->redirect(array('admin' => true, 'controller' => 'products', 'action' => 'edit', $id));
@@ -208,6 +206,21 @@ class ProductsController extends AppController {
 
         // pr($productData);
         $this->request->data = $productData;
+    }
+
+    public function admin_add_product_parts() {
+        $this->loadModel('ProductParts');
+        $postData = $this->request->data;
+
+        if (isset($postData) && !empty($postData)) {
+
+            $postData['ProductParts']['product_id'] = $postData['ProductParts']['productId'];
+
+            if ($this->ProductParts->save($postData)) {
+                $this->flash_msg('Product Part Updated', 1);
+                $this->redirect(array('admin' => true, 'controller' => 'products', 'action' => 'edit', $postData['ProductParts']['productId']));
+            }
+        }
     }
 
     public function admin_image_multi_upload() {

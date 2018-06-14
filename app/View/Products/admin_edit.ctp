@@ -1,7 +1,13 @@
+<style>
+    table.fixed-table { table-layout:fixed; }
+    table.fixed-table td { overflow: hidden; }
+
+</style>
 <?php
-//prd($this->request->data);
-echo $this->Html->script('jquery.form.min');
+//echo $this->Html->script('jquery.form.min');
 ?>  
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
 <?php
 if (isset($this->request->data['Product']['id']) && !empty($this->request->data['Product']['id'])) {
     $productId = $this->request->data['Product']['id'];
@@ -26,24 +32,22 @@ if (isset($this->request->data['Product']['id']) && !empty($this->request->data[
 <!-- Main content -->
 <section class="content">
     <!-- START CUSTOM TABS -->
-    <h2 class="page-header">Add Product</h2>
+    <h2 class="page-header">Edit Product</h2>
     <div class="row">
         <div class="col-md-12">
             <!-- Custom Tabs -->
             <div class="nav-tabs-custom">
                 <ul class="nav nav-tabs">
-                    <li class="active"><a href="#tab_1" data-toggle="tab">Basic Information</a></li>
+                    <li class="active"><a href="#tab_1" data-toggle="tab">Basic Information (1)</a></li>
                     <li><a href="#tab_2" data-toggle="tab">Basic Information (2)</a></li>
-                    <li><a href="#tab_3" data-toggle="tab">Product Images</a></li>
+                    <li><a href="#tab_3" data-toggle="tab">Product Images (3)</a></li>
                     <?php
                     if ($this->request->data['Product']['multiple_parts']) {
                         ?>
-                        <li><a href="#tab_4" data-toggle="tab">Multiple Parts</a></li>
+                        <li><a href="#tab_4" data-toggle="tab">Multiple Parts (4)</a></li>
                         <?php
                     }
                     ?>
-
-
                     <li class="pull-right">
                         <a href="#" class="text-muted">
                             <i class="fa fa-gear"></i>
@@ -223,23 +227,25 @@ if (isset($this->request->data['Product']['id']) && !empty($this->request->data[
                         <!-- /.box -->
                     </div>
                     <!-- /.tab-pane -->
-
-
                     <div class="tab-pane" id="tab_2">
                         <!-- Horizontal Form -->
                         <div class="box box-info">
                             <div class="box-header with-border">
                                 <h3 class="box-title">Other Information</h3>
                             </div>
+                            <b>Check List:</b>
+                            <p>1.Only PDF file Format allowed. 2. Maximum size 2MB allowed.</p>
+
                             <!-- /.box-header -->
                             <!-- form start -->
                             <?php
                             echo $this->Form->create('Product', array(
                                 'role' => 'form',
+                                'type' => 'file',
                                 'div' => false,
                                 'class' => 'form-horizontal',
-                                'url' => array('admin' => true, 'action' => 'add')));
-                            echo $this->Form->input('id', array('value' => $productId, 'hidden'))
+                                'url' => array('admin' => true, 'action' => 'edit')));
+                            echo $this->Form->input('id', array('value' => $productId, 'hidden'));
                             ?>
                             <div class="box-body">
                                 <div class="form-group">
@@ -259,10 +265,15 @@ if (isset($this->request->data['Product']['id']) && !empty($this->request->data[
                                     <div class="col-sm-10">
                                         <?php
                                         echo $this->Form->input('assembly_instruction_file', array(
-                                            'class' => 'form-control',
+                                            'class' => 'btn btn-default',
                                             'div' => false,
                                             'label' => false,
-                                            'type' => 'file'
+                                            'type' => 'file',
+                                            'multiple' => 'multiple',
+                                            'data-validation' => 'required extension',
+                                            'data-validation-allowing' => 'pdf',
+                                            'data-validation' => 'mime size',
+                                            'data-validation-max-size' => '2M',
                                         ));
                                         ?>
                                     </div>
@@ -282,34 +293,28 @@ if (isset($this->request->data['Product']['id']) && !empty($this->request->data[
                                     <label  class="col-sm-2 control-label">Special Instruction File</label>
                                     <div class="col-sm-10">
                                         <?php
-                                        echo $this->Form->input('width', array(
-                                            'class' => 'form-control',
+                                        echo $this->Form->input('special_instruction_file', array(
+                                            'class' => 'btn btn-default',
+                                            'type' => 'file',
                                             'label' => false,
+                                            'multiple' => 'multiple',
+                                            'data-validation' => 'required extension',
+                                            'data-validation-allowing' => 'pdf',
+                                            'data-validation' => 'mime size',
+                                            'data-validation-max-size' => '2M',
                                         ));
                                         ?>
                                     </div>
                                 </div>
-
-                                <!--                                    <div class="form-group">
-                                                                        <div class="col-sm-offset-2 col-sm-10">
-                                                                            <div class="checkbox">
-                                                                                <label>
-                                                                                    <input type="checkbox"> Remember me
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                -->
                             </div>
                             <!-- /.box-body -->
                             <div class="box-footer">
-                                <!--                                    <button type="submit" class="btn btn-default">Cancel</button>-->
                                 <?php
                                 echo $this->Form->submit('Save', array(
                                     'class' => 'btn btn-info pull-right',
+                                    'value' => "Validate",
                                 ));
                                 ?>
-                                <!--<button type="submit" class="btn btn-info pull-right">Save</button>-->
                             </div>
                             <?php
                             echo $this->Form->end();
@@ -406,7 +411,84 @@ if (isset($this->request->data['Product']['id']) && !empty($this->request->data[
                     </div>
                     <!-- /.tab-pane -->
                     <div class="tab-pane" id="tab_4">
-                        This is part 4.
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Manage Product Parts</h3>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <table class="table table-bordered fixed-table">
+                                <tbody>
+                                <col width="41px" />
+                                <col width="41px" />
+                                <col width="10px" />
+                                <col width="8px" />
+                                <tr>
+                                    <th >Part Title</th>
+                                    <th>Part Type</th>
+                                    <th>Quantity</th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <?php
+                                    echo $this->Form->create('ProductParts', array(
+                                        'role' => 'form',
+                                        'div' => false,
+                                        'class' => 'form-horizontal',
+                                        'url' => array('admin' => true, 'controller' => 'products', 'action' => 'add_product_parts')));
+                                    echo $this->Form->input('productId', array('value' => $productId, 'hidden'));
+                                    ?>
+                                    <td>
+                                        <div class="form-group">
+                                            <?php
+                                            echo $this->Form->input('part_title', array(
+                                                'label' => false,
+                                                'class' => 'form-control',
+                                            ));
+                                            ?>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-group">
+                                            <?php
+                                            echo $this->Form->input('part_type', array(
+                                                'label' => false,
+                                                'class' => 'form-control',
+                                            ));
+                                            ?>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-group">
+                                            <?php
+                                            echo $this->Form->input('part_qty', array(
+                                                'label' => false,
+                                                'class' => 'form-control',
+                                            ));
+                                            ?>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-group">
+                                            <?php
+                                            echo $this->Form->submit('Add', array(
+                                                'label' => false,
+                                                'class' => 'btn bg-orange btn-flat',
+                                            ));
+                                            ?>
+                                        </div>
+                                    </td>
+                                    <?php
+                                    echo $this->Form->end();
+                                    ?>
+
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+
+
                     </div>
                     <!-- /.tab-pane -->
                 </div>
@@ -436,6 +518,11 @@ if (isset($this->request->data['Product']['id']) && !empty($this->request->data[
 <!-- /.content -->
 
 <?php echo $this->Form->end(); ?>
+<script>
+    $.validate({
+        modules: 'file'
+    });
+</script>
 <script>
     jQuery(document).ready(function($) {
         var validator = $('#ProductAdminEditForm').validate({

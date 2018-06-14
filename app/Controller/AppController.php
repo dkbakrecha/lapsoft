@@ -95,15 +95,13 @@ class AppController extends Controller {
         if (isset($file_info) && !empty($file_info)) {
             $fileSize = $file_info['size'];
             if ($fileSize > $Size) {
-                echo "<script>"
-                . "alert('File size more then 1mb.');"
-                . "</script>";
+                echo "<script>" . "alert('File size more then 1mb.');" . "</script>";
                 return false;
             } else {
                 if (!empty($file_info['name'])) {
                     $ext = $this->get_extension($file_info['name']);
                     if (in_array($ext, $allowedExt)) {
-                        $newFileName = date("mY") . "_" . rand(1000, 9999) . '.' . $ext;
+                        $newFileName = date("dMy") . "_" . rand(1000, 9999) . '.' . $ext;
                         $destination = $fileSavePath . $newFileName;
                         $moved = move_uploaded_file($file_info['tmp_name'], $destination);
                         if ($moved) {
