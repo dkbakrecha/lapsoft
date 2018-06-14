@@ -1,3 +1,6 @@
+<?php
+//prd($productData);
+?>
 <style>
     table.fixed-table { table-layout:fixed; }
     table.fixed-table td { overflow: hidden; }
@@ -435,7 +438,7 @@ if (isset($this->request->data['Product']['id']) && !empty($this->request->data[
                                         'div' => false,
                                         'class' => 'form-horizontal',
                                         'url' => array('admin' => true, 'controller' => 'products', 'action' => 'add_product_parts')));
-                                    echo $this->Form->input('productId', array('value' => $productId, 'hidden'));
+                                    $this->Form->input('productId', array('value' => $productId, 'hidden'));
                                     ?>
                                     <td>
                                         <div class="form-group">
@@ -463,6 +466,7 @@ if (isset($this->request->data['Product']['id']) && !empty($this->request->data[
                                             echo $this->Form->input('part_qty', array(
                                                 'label' => false,
                                                 'class' => 'form-control',
+                                                'type' => 'text',
                                             ));
                                             ?>
                                         </div>
@@ -484,11 +488,48 @@ if (isset($this->request->data['Product']['id']) && !empty($this->request->data[
                                 </tr>
                                 </tbody>
                             </table>
+                            <hr>
+                            <!-- /.box-header -->
+                            <table class="table table-bordered fixed-table">
+                                <tbody>
+                                <col width="10px" />
+                                <col width="35px" />
+                                <col width="35px" />
+                                <col width="10px" />
+                                <col width="10px" />
+                                <tr>
+                                    <th>Sn.</th>
+                                    <th>Part Title</th>
+                                    <th>Part Type</th>
+                                    <th>Quantity</th>
+                                    <th></th>
+                                </tr>
+                                <?php
+                                $i = 1;
+                                foreach ($productData['ProductParts'] as $productParts) {
+                                    ?>
+                                    <tr>
+                                        <td><?php echo $i; ?></td>
+                                        <td><?php echo $productParts['part_title']; ?></td>
+                                        <td><?php echo $productParts['part_type']; ?></td>
+                                        <td><?php echo $productParts['part_qty']; ?></td>
+                                        <td>
+                                            <div style="padding: 5px; float: left;">
+                                                <a href=""><i class="fa fa-pencil fa-lg"></i></a>    
+                                            </div>
+                                            <div style="padding: 5px; float: left;">
+                                                <a onclick="delete_part(<?php echo $productParts['id']; ?>)"> <i class="fa fa-trash fa-lg"></i></a>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                    <?php
+                                    $i++;
+                                }
+                                ?>
+                                </tbody>
+                            </table>
                         </div>
-
-
-
-
                     </div>
                     <!-- /.tab-pane -->
                 </div>
@@ -705,6 +746,23 @@ if (isset($this->request->data['Product']['id']) && !empty($this->request->data[
     function coverPhoto() {
         $(".cover_photo").remove();
         $("#sortable li:eq(0)").append(cover_photo);
+    }
+
+    function delete_part(Part_id) {
+        bootbox.confirm('Are you sure you want to delete?', function(r) {
+            if (r == true) {
+                URL = '<?php echo $this->Html->url(array('admin' => true, "controller" => "products", "action" => "product_part_delete")); ?>';
+                //    alert(Photo_id);
+                $.ajax({
+                    url: URL,
+                    method: 'POST',
+                    data: ({Part_id: Part_id}),
+                    success: function(data) {
+                        location.reload();
+                    }
+                });
+            }
+        });
     }
 
 </script>
