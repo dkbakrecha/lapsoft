@@ -474,7 +474,7 @@ if (isset($this->request->data['Product']['id']) && !empty($this->request->data[
                                     <td>
                                         <div class="form-group">
                                             <?php
-                                            echo $this->Form->submit('Add', array(
+                                            echo $this->Form->submit('Update', array(
                                                 'label' => false,
                                                 'class' => 'btn bg-orange btn-flat',
                                             ));
@@ -506,16 +506,17 @@ if (isset($this->request->data['Product']['id']) && !empty($this->request->data[
                                 </tr>
                                 <?php
                                 $i = 1;
-                                foreach ($productData['ProductParts'] as $productParts) {
+
+                                foreach ($productData['ProductPart'] as $productParts) {
                                     ?>
-                                    <tr>
+                                    <tr id="partRowId">
                                         <td><?php echo $i; ?></td>
-                                        <td><?php echo $productParts['part_title']; ?></td>
+                                        <td ><?php echo $productParts['part_title']; ?></td>
                                         <td><?php echo $productParts['part_type']; ?></td>
                                         <td><?php echo $productParts['part_qty']; ?></td>
                                         <td>
                                             <div style="padding: 5px; float: left;">
-                                                <a href=""><i class="fa fa-pencil fa-lg"></i></a>    
+                                                <a onclick="fillPartsData(<?php echo $productParts['id']; ?>)"><i class="fa fa-pencil fa-lg"></i></a>    
                                             </div>
                                             <div style="padding: 5px; float: left;">
                                                 <a onclick="delete_part(<?php echo $productParts['id']; ?>)"> <i class="fa fa-trash fa-lg"></i></a>
@@ -763,6 +764,14 @@ if (isset($this->request->data['Product']['id']) && !empty($this->request->data[
                 });
             }
         });
+    }
+
+    function fillPartsData() {
+        console.log($("#partRowId").html());
+        //var ProductTitle = $('#partRowId').html();
+
+
+        $('#ProductPartsPartTitle').val(ProductTitle);
     }
 
 </script>

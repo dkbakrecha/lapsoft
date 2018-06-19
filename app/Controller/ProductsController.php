@@ -132,7 +132,7 @@ class ProductsController extends AppController {
 
     public function admin_edit($id = 0) {
         $this->set('title_for_layout', 'Edit Product');
-
+        $this->Product->Behaviors->load('Containable');
 
         // Start of checking URL valid accessibility
         if (!is_numeric($id)) {
@@ -155,12 +155,16 @@ class ProductsController extends AppController {
         $condition = array();
         $condition['Product.status !='] = 2;
         $condition['Product.id'] = $id;
-       // $condition['ProductPart.status'] = 1;
+       
+
 
         $productData = $this->Product->find('first', array(
             'conditions' => array($condition),
+            'contain' => array('ProductPart' => array(
+                    'conditions' => array('ProductPart.status' => 1))
+            ),
         ));
-        //  prd($productData);
+        //prd($productData);
         $postData = $this->request->data;
 
         if (isset($postData) && !empty($postData)) {
