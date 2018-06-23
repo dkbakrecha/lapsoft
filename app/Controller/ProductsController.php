@@ -16,6 +16,7 @@ App::uses('AppController', 'Controller');
 class ProductsController extends AppController {
 
     public $uses = array();
+    public $components = array('RequestHandler');
 
     //Admin Add Product 
 
@@ -432,6 +433,23 @@ class ProductsController extends AppController {
 //pr('Some error occured while File Upload');
 //              /  exit;
             }
+        }
+    }
+
+    public function admin_productlist() {
+        if ($this->request->is('ajax')) {
+            $term = $this->request->query('term');
+            $proNames = $this->Product->find('list', array(
+                'fields' => array('id', 'product_title'),
+                'conditions' => array(
+                    'product_title LIKE' => trim($term) . '%'
+                )
+            ));
+           // prd($proNames);
+            echo json_encode($proNames);
+            exit;
+            //$this->set(compact('proNames'));
+            //$this->set('_serialize', 'proNames');
         }
     }
 

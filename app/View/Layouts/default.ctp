@@ -95,7 +95,7 @@ $websiteTitle = ('Lariya Art Palace');
             <?php echo $this->Element('control_slider') ?>
 
         </div>
-        <?php //echo $this->element('sql_dump');   ?>
+        <?php //echo $this->element('sql_dump');    ?>
 
 
         <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->

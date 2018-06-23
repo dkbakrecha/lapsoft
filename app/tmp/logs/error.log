@@ -23826,3 +23826,1397 @@ Request URL: /lapsoft/admin/dist/img/user4-128x128.jpg
 Stack Trace:
 #0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2018-06-14 19:52:49 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-14 19:52:50 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-14 19:52:50 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-14 19:52:51 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-14 19:52:51 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-14 19:52:56 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-14 19:52:56 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-14 19:52:57 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-14 19:52:57 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-14 19:52:59 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 19:52:59 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 19:56:50 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-14 19:56:50 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-14 19:56:51 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-14 19:56:51 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-14 19:56:55 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 19:56:55 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 19:56:56 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 19:56:56 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 19:57:01 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-14 19:57:01 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-14 19:57:01 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-14 19:57:01 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-14 19:57:29 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-14 19:57:29 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-14 20:01:04 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-14 20:01:04 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-14 20:01:48 Error: [MissingViewException] View file "C:\xampp\htdocs\lapsoft\app\View\PurchaseOrders\admin_index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\lapsoft\\app\\View\\PurchaseOrders\\admin_index.ctp',
+)
+Request URL: /lapsoft/admin/purchase_orders/
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#4 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-06-14 20:01:48 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:01:49 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:01:53 Error: [MissingActionException] Action PurchaseOrdersController::admin_create() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_create',
+)
+Request URL: /lapsoft/admin/purchase_orders/create
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:01:53 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:01:53 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:01:54 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:01:54 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:03:05 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:03:05 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:04:08 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:04:08 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:04:08 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:04:08 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:04:33 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:04:34 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:04:34 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:04:46 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:04:46 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:04:46 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:04:46 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:04:59 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:04:59 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:05:29 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:05:29 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:05:29 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:05:29 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:06:12 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:06:12 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:06:13 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:07:57 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:07:57 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:07:57 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:08:16 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:08:16 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:08:37 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:08:37 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:09:04 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:09:04 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:09:05 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:09:20 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:09:21 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:09:21 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:10:34 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:10:34 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:10:35 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:10:35 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:10:38 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:10:38 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:10:39 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:10:39 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:12:54 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-14 20:12:54 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-14 20:13:05 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-14 20:13:05 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-14 20:13:10 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:13:10 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:14:06 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:14:06 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:14:06 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:16:17 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:16:17 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:16:17 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:16:47 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:16:47 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:18:02 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:18:02 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:18:02 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:22:25 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:22:26 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:25:27 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:25:27 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:27:07 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:27:07 Error: [MissingActionException] Action PurchaseOrdersController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'PurchaseOrdersController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/purchase_orders/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PurchaseOrdersController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:51:06 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:51:06 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:51:07 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:51:07 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:53:35 Error: [MissingActionException] Action ProductsController::admin_productlist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_productlist',
+)
+Request URL: /lapsoft/admin/products/productlist?term=te
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:53:51 Error: [MissingActionException] Action ProductsController::admin_productlist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_productlist',
+)
+Request URL: /lapsoft/admin/products/productlist?term=tec
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:54:08 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-14 20:54:08 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-14 20:54:23 Error: [MissingActionException] Action ProductsController::admin_productlist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_productlist',
+)
+Request URL: /lapsoft/admin/products/productlist?term=a
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:54:24 Error: [MissingActionException] Action ProductsController::admin_productlist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_productlist',
+)
+Request URL: /lapsoft/admin/products/productlist?term=as
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-14 20:54:52 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'where clause'
+Request URL: /lapsoft/admin/products/productlist?term=asdc
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Product...', Array)
+#2 C:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT `Product...', Array, Array)
+#3 C:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `Product...', false)
+#4 C:\xampp\htdocs\lapsoft\lib\Cake\Model\Model.php(2921): DboSource->read(Object(Product), Array)
+#5 C:\xampp\htdocs\lapsoft\lib\Cake\Model\Model.php(2893): Model->_readDataSource('list', Array)
+#6 C:\xampp\htdocs\lapsoft\app\Model\Product.php(13): Model->find('list', Array)
+#7 C:\xampp\htdocs\lapsoft\app\Controller\ProductsController.php(442): Product->getProductNames('asdc')
+#8 [internal function]: ProductsController->admin_productlist()
+#9 C:\xampp\htdocs\lapsoft\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#10 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#12 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2018-06-14 20:55:35 Error: [MissingViewException] View file "C:\xampp\htdocs\lapsoft\app\View\Products\admin_productlist.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\xampp\\htdocs\\lapsoft\\app\\View\\Products\\admin_productlist.ctp',
+)
+Request URL: /lapsoft/admin/products/productlist?term=te
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-06-14 20:58:59 Error: Fatal Error (1): Call to undefined method ProductsController::find() in [C:\xampp\htdocs\lapsoft\app\Controller\ProductsController.php, line 442]
+2018-06-14 20:58:59 Error: [FatalErrorException] Call to undefined method ProductsController::find()
+Request URL: /lapsoft/admin/products/productlist?term=test
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 442)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 442, Array)
+#2 C:\xampp\htdocs\lapsoft\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 442, Array)
+#3 C:\xampp\htdocs\lapsoft\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-06-23 17:59:12 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-23 17:59:13 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-23 17:59:13 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-23 17:59:13 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-23 17:59:14 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-23 17:59:22 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-23 17:59:22 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-23 17:59:25 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-23 17:59:25 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-23 17:59:26 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-23 17:59:26 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-23 18:00:53 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-23 18:00:53 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-23 18:00:53 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-23 18:00:53 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-23 18:00:59 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-23 18:00:59 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-23 18:00:59 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-23 18:01:00 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

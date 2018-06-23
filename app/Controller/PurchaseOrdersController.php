@@ -45,14 +45,14 @@ class PurchaseOrdersController extends AppController {
             //prd($condition);
             $total_records = $this->Buyer->find('count', array('conditions' => $condition));
 
-            $fields = array('Buyer.id', 'Buyer.name', 'Buyer.contact', 'Buyer.email',  'Buyer.created', 'Buyer.status');
+            $fields = array('Buyer.id', 'Buyer.name', 'Buyer.contact', 'Buyer.email', 'Buyer.created', 'Buyer.status');
             $userData = $this->Buyer->find('all', array(
                 'conditions' => $condition,
                 'fields' => $fields,
                 'order' => $orderby,
                 'limit' => $limit,
                 'offset' => $start
-                    ));
+            ));
 
             $return_result['draw'] = $page;
             $return_result['recordsTotal'] = $total_records;
@@ -76,8 +76,7 @@ class PurchaseOrdersController extends AppController {
                     }
 
                     //$action .= '&nbsp;&nbsp;&nbsp;<a href="#"><i class="fa fa-eye fa-lg"></i></a> ';
-
-                   // $action .= '&nbsp;&nbsp;&nbsp;<a href="' . $this->webroot . 'suppliers/view/' . $row['Buyer']['title_slug'] . '" title="View Post" target="_BLANK"><i class="fa fa-eye fa-lg"></i></a> ';
+                    // $action .= '&nbsp;&nbsp;&nbsp;<a href="' . $this->webroot . 'suppliers/view/' . $row['Buyer']['title_slug'] . '" title="View Post" target="_BLANK"><i class="fa fa-eye fa-lg"></i></a> ';
                     $action .= '&nbsp;&nbsp;&nbsp;<a href="' . $this->webroot . 'admin/suppliers/edit/' . $row['Buyer']['id'] . '" title="Edit Buyer"><i class="fa fa-pencil fa-lg"></i></a> ';
 
                     $action .= '&nbsp;&nbsp;&nbsp; <a href="#" onclick="delete_user(' . $row['Buyer']['id'] . ')" title="Delete User"><i class="fa fa-trash fa-lg"></i></a>';
@@ -99,7 +98,7 @@ class PurchaseOrdersController extends AppController {
             // pr($return_result);
             echo json_encode($return_result);
             exit;
-        } 
+        }
     }
 
     public function admin_add() {
@@ -132,20 +131,34 @@ class PurchaseOrdersController extends AppController {
 
         $this->request->data = $this->Buyer->find('first', array('conditions' => array('Buyer.id' => $id)));
     }
-    
-    
-	public function admin_add_edit($id = null) {
-            $request = $this->request;
-            $this->loadModel('Buyer');
-            $buyerList = $this->Buyer->find('list');
-            
-            if($request->is('post')){
-                $data = $request->data;
-                $this->PurchaseOrder->save($data);
-            }
-            $this->set("buyerList", $buyerList);
-            
-	}
 
+    public function admin_add_edit($id = null) {
+        $request = $this->request;
+        $this->loadModel('Buyer');
+        $buyerList = $this->Buyer->find('list');
+        
+        if(!empty($id)){
+            $PODetail = $this->PurchaseOrder->find('first',array(
+                'conditions' => array(
+                    'id' => $id
+                )
+            ));
+            
+            $request->data = $PODetail;
+        }
+
+        if ($request->is('post')) {
+            $data = $request->data;
+            $data['PurchaseOrder']['create_date'] = date("Y-m-d", strtotime($data['PurchaseOrder']['create_date']));
+            $data['PurchaseOrder']['delivery_date'] = date("Y-m-d", strtotime($data['PurchaseOrder']['delivery_date']));
+            $data['PurchaseOrder']['po_id'] = "PO" . time();
+
+            //prd($data);
+            if ($res = $this->PurchaseOrder->save($data)) {
+                return $this->redirect(array('action' => 'add_edit', $res['PurchaseOrder']['id']));
+            }
+        }
+        $this->set("buyerList", $buyerList);
+    }
 
 }
