@@ -7,7 +7,7 @@
 
 </style>
 <?php
-//echo $this->Html->script('jquery.form.min');
+echo $this->Html->script('jquery.blockUI');
 ?>  
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
 
@@ -112,7 +112,9 @@ if (isset($this->request->data['Product']['id']) && !empty($this->request->data[
                                             'class' => 'form-control',
                                             'label' => false,
                                             'placeholder' => 'Only Number allowed',
-                                            'required' => true
+                                            'required' => true,
+                                            'type' => 'text',
+                                            'data-validation' => 'number'
                                         ));
                                         ?>
                                     </div>
@@ -125,7 +127,9 @@ if (isset($this->request->data['Product']['id']) && !empty($this->request->data[
                                             'class' => 'form-control',
                                             'label' => false,
                                             'placeholder' => 'Only Number allowed',
-                                            'required' => true
+                                            'required' => true,
+                                            'type' => 'text',
+                                            'data-validation' => 'number'
                                         ));
                                         ?>
                                     </div>
@@ -138,7 +142,9 @@ if (isset($this->request->data['Product']['id']) && !empty($this->request->data[
                                             'class' => 'form-control',
                                             'label' => false,
                                             'placeholder' => 'Only Number allowed',
-                                            'required' => true
+                                            'required' => true,
+                                            'type' => 'text',
+                                            'data-validation' => 'number'
                                         ));
                                         ?>
                                     </div>
@@ -151,7 +157,9 @@ if (isset($this->request->data['Product']['id']) && !empty($this->request->data[
                                             'class' => 'form-control',
                                             'label' => false,
                                             'placeholder' => 'Only Number allowed',
-                                            'required' => true
+                                            'required' => true,
+                                            'type' => 'text',
+                                            'data-validation' => 'number'
                                         ));
                                         ?>
                                     </div>
@@ -198,18 +206,18 @@ if (isset($this->request->data['Product']['id']) && !empty($this->request->data[
                                     </div>
                                 </div>
 
-                                <div class="form-group">
-                                    <label  class="col-sm-2 control-label">Keywords</label>
-                                    <div class="col-sm-10">
-                                        <?php
-                                        echo $this->Form->input('keywords', array(
-                                            'label' => false,
-                                            'class' => 'form-control',
-                                            'placeholder' => "Keywords if any for SEO purpose."
-                                        ));
-                                        ?>
-                                    </div>
-                                </div>
+                                <!--                                <div class="form-group">
+                                                                    <label  class="col-sm-2 control-label">Keywords</label>
+                                                                    <div class="col-sm-10">
+                                <?php
+//                                        echo $this->Form->input('keywords', array(
+//                                            'label' => false,
+//                                            'class' => 'form-control',
+//                                            'placeholder' => "Keywords if any for SEO purpose."
+//                                        ));
+                                ?>
+                                                                    </div>
+                                                                </div>-->
                             </div>
                             <!-- /.box-body -->
                             <div class="box-footer">
@@ -315,7 +323,7 @@ if (isset($this->request->data['Product']['id']) && !empty($this->request->data[
                                 <?php
                                 echo $this->Form->submit('Save', array(
                                     'class' => 'btn btn-info pull-right',
-                                    'value' => "Validate",
+                                    'value' => 'Validate',
                                 ));
                                 ?>
                             </div>
@@ -419,117 +427,122 @@ if (isset($this->request->data['Product']['id']) && !empty($this->request->data[
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body">
-                            <table class="table table-bordered fixed-table">
-                                <tbody>
-                                <col width="41px" />
-                                <col width="41px" />
-                                <col width="10px" />
-                                <col width="8px" />
-                                <tr>
-                                    <th >Part Title</th>
-                                    <th>Part Type</th>
-                                    <th>Quantity</th>
-                                    <th></th>
-                                </tr>
-                                <tr>
+
+                            <div class="row">
+                                <?php
+                                echo $this->Form->create('ProductParts', array(
+                                    'role' => 'form',
+                                    'div' => false,
+                                    'class' => 'form-horizontal',
+                                    'url' => array('admin' => true, 'controller' => 'products', 'action' => 'add_product_parts')
+                                ));
+                                ?>
+                                <div class="col-xs-4">
+
                                     <?php
-                                    echo $this->Form->create('ProductParts', array(
-                                        'role' => 'form',
-                                        'div' => false,
-                                        'class' => 'form-horizontal',
-                                        'url' => array('admin' => true, 'controller' => 'products', 'action' => 'add_product_parts')));
-                                    $this->Form->input('productId', array('value' => $productId, 'hidden'));
-                                    ?>
-                                    <td>
-                                        <div class="form-group">
-                                            <?php
-                                            echo $this->Form->input('part_title', array(
-                                                'label' => false,
-                                                'class' => 'form-control',
-                                            ));
-                                            ?>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="form-group">
-                                            <?php
-                                            echo $this->Form->input('part_type', array(
-                                                'label' => false,
-                                                'class' => 'form-control',
-                                            ));
-                                            ?>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="form-group">
-                                            <?php
-                                            echo $this->Form->input('part_qty', array(
-                                                'label' => false,
-                                                'class' => 'form-control',
-                                                'type' => 'text',
-                                            ));
-                                            ?>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="form-group">
-                                            <?php
-                                            echo $this->Form->submit('Update', array(
-                                                'label' => false,
-                                                'class' => 'btn bg-orange btn-flat',
-                                            ));
-                                            ?>
-                                        </div>
-                                    </td>
-                                    <?php
-                                    echo $this->Form->end();
+                                    echo $this->Form->input('product_id', array('value' => $productId, 'hidden', 'label' => false, 'type' => 'text'));
+                                    echo $this->Form->input('id', array('value' => '', 'hidden', 'label' => false));
+
+                                    echo $this->Form->input('part_title', array(
+                                        'label' => false,
+                                        'class' => 'form-control',
+                                        'type' => 'text',
+                                        'placeholder' => 'Part Title',
+                                        'data-validation' => 'required',
+                                    ));
                                     ?>
 
-                                </tr>
-                                </tbody>
-                            </table>
+                                </div>
+                                <div class="col-xs-4">
+
+                                    <?php
+                                    echo $this->Form->input('part_type', array(
+                                        'label' => false,
+                                        'class' => 'form-control',
+                                        'placeholder' => 'Part Type',
+                                        'data-validation' => 'required',
+                                    ));
+                                    ?>
+
+                                </div>
+                                <div class="col-xs-2">
+
+                                    <?php
+                                    echo $this->Form->input('part_qty', array(
+                                        'label' => false,
+                                        'class' => 'form-control',
+                                        'type' => 'text',
+                                        'placeholder' => 'Quantity',
+                                        'data-validation' => "required number",
+                                        'data-validation-error-msg-required' => "This field is required",
+                                        'data-validation-error-msg-number' => "It must be a number"
+                                    ));
+                                    ?>
+
+                                </div>
+                                <div class="col-xs-2">
+
+                                    <?php
+                                    echo $this->Form->submit('Update', array(
+                                        'label' => false,
+                                        'class' => 'btn bg-orange btn-flat',
+                                        'value' => 'Validate',
+                                    ));
+                                    ?>
+
+                                </div>
+                                <?php
+                                echo $this->Form->end();
+                                ?>
+                            </div>
+
+                            <!-- /.box-body -->
+
                             <hr>
                             <!-- /.box-header -->
-                            <table class="table table-bordered fixed-table">
-                                <tbody>
-                                <col width="10px" />
-                                <col width="35px" />
-                                <col width="35px" />
-                                <col width="10px" />
-                                <col width="10px" />
-                                <tr>
-                                    <th>Sn.</th>
-                                    <th>Part Title</th>
-                                    <th>Part Type</th>
-                                    <th>Quantity</th>
-                                    <th></th>
-                                </tr>
-                                <?php
-                                $i = 1;
-
-                                foreach ($productData['ProductPart'] as $productParts) {
-                                    ?>
-                                    <tr id="partRowId">
-                                        <td><?php echo $i; ?></td>
-                                        <td ><?php echo $productParts['part_title']; ?></td>
-                                        <td><?php echo $productParts['part_type']; ?></td>
-                                        <td><?php echo $productParts['part_qty']; ?></td>
-                                        <td>
-                                            <div style="padding: 5px; float: left;">
-                                                <a onclick="fillPartsData(<?php echo $productParts['id']; ?>)"><i class="fa fa-pencil fa-lg"></i></a>    
-                                            </div>
-                                            <div style="padding: 5px; float: left;">
-                                                <a onclick="delete_part(<?php echo $productParts['id']; ?>)"> <i class="fa fa-trash fa-lg"></i></a>
-                                            </div>
-
-                                        </td>
+                            <div>
+                                <table class="table table-bordered fixed-table">
+                                    <tbody>
+                                    <col width="10px" />
+                                    <col width="35px" />
+                                    <col width="35px" />
+                                    <col width="10px" />
+                                    <col width="10px" />
+                                    <tr>
+                                        <th>Sn.</th>
+                                        <th>Part Title</th>
+                                        <th>Part Type</th>
+                                        <th>Quantity</th>
+                                        <th></th>
                                     </tr>
                                     <?php
-                                    $i++;
-                                }
-                                ?>
-                                </tbody>
-                            </table>
+                                    $i = 1;
+
+                                    foreach ($productData['ProductPart'] as $productParts) {
+                                        ?>
+                                        <tr>
+                                            <td><?php echo $i; ?></td>
+                                            <td ><?php echo $productParts['part_title']; ?></td>
+                                            <td><?php echo $productParts['part_type']; ?></td>
+                                            <td><?php echo $productParts['part_qty']; ?></td>
+                                            <td>
+                                                <div style="padding: 5px; float: left;">
+                                                    <a onclick="fillPartsData(<?php echo $productParts['id']; ?>)"><i class="fa fa-pencil fa-lg"></i></a>    
+                                                </div>
+                                                <div style="padding: 5px; float: left;">
+                                                    <a onclick="delete_part(<?php echo $productParts['id']; ?>)"> <i class="fa fa-trash fa-lg"></i></a>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <?php
+                                        $i++;
+                                    }
+                                    ?>
+                                    </tbody>
+                                </table> 
+                            </div>
+
                         </div>
                     </div>
                     <!-- /.tab-pane -->
@@ -543,8 +556,8 @@ if (isset($this->request->data['Product']['id']) && !empty($this->request->data[
         <label style="display:none" class="">
             <?php
             echo $this->Form->input('uploadfile.', array(
-                'name' => 'uploadfile[]',
-                'id' => 'newImage',
+                'name' => 'uploadfile[   ]',
+                ' id' => 'newImage',
                 'type' => 'file',
                 'label' => false,
                 'onchange' => "$('#imageTempStep1Form').submit();",
@@ -552,42 +565,41 @@ if (isset($this->request->data['Product']['id']) && !empty($this->request->data[
                 'multiple'));
             ?>
         </label>
-
+        <?php echo $this->Form->end(); ?>
     </div>
     <!-- /.row -->
     <!-- END CUSTOM TABS -->
 </section>
 <!-- /.content -->
 
-<?php echo $this->Form->end(); ?>
 <script>
     $.validate({
-        modules: 'file'
+        modules: 'file',
     });
 </script>
 <script>
     jQuery(document).ready(function($) {
-        var validator = $('#ProductAdminEditForm').validate({
-            // initialize the plugin
-            rules: {
-                "data[Product][height]": {
-                    required: true,
-                    number: true,
-                },
-                "data[Product][width]": {
-                    number: true,
-                    required: true,
-                },
-                "data[Product][length]": {
-                    number: true,
-                    required: true,
-                },
-                "data[Product][net_size]": {
-                    number: true,
-                    required: true,
-                }
-            }
-        });
+        //        var validator = $('#ProductAdminEditForm').validate({
+        //            // initialize the plugin
+        //            rules: {
+        //                "data[Product][height]": {
+        //                    required: true,
+        //                    number: true,
+        //                },
+        //                "data[Product][width]": {
+        //                    number: true,
+        //                    required: true,
+        //                },
+        //                "data[Product][length]": {
+        //                    number: true,
+        //                    required: true,
+        //                },
+        //                "data[Product][net_size]": {
+        //                    number: true,
+        //                    required: true,
+        //                }
+        //            }
+        //        });
     });
     function newupload() {
         //alert("I am in");
@@ -685,7 +697,7 @@ if (isset($this->request->data['Product']['id']) && !empty($this->request->data[
         $('#imageTempStep1Form').ajaxForm(options);
     }
 
-    //set set preview
+//set set preview
     function image_preview(res) {
         $("#busy-indicator").fadeOut();
         var obj = res; //JSON.parse(res);
@@ -766,13 +778,33 @@ if (isset($this->request->data['Product']['id']) && !empty($this->request->data[
         });
     }
 
-    function fillPartsData() {
-        console.log($("#partRowId").html());
-        //var ProductTitle = $('#partRowId').html();
-
-
-        $('#ProductPartsPartTitle').val(ProductTitle);
+    function fillPartsData(partId) {
+        var url = '<?php echo $this->Html->url(array('controller' => 'products', 'action' => 'get_parts_data')); ?>';
+        $.ajax({
+            type: 'POST',
+            url: url,
+            data: ({partId: partId}),
+            beforeSend: function(XMLHttpRequest) {
+                $.blockUI.defaults.overlayCSS.opacity = .2;
+                $('.box-body').block({
+                    message: '<h3>Processing...</h3>',
+                    css: {border: '3px solid #fff'}
+                });
+            },
+            success: function(opt) {
+                $('.box-body').unblock();
+                myResult = JSON.parse(opt);
+                //    console.log(myResult.ProductPart.part_title);
+                $('#ProductPartsId').val(myResult.ProductPart.id);
+                $('#ProductPartsId').val(myResult.ProductPart.id);
+                $('#ProductPartsPartTitle').val(myResult.ProductPart.part_title);
+                $('#ProductPartsPartType').val(myResult.ProductPart.part_type);
+                $('#ProductPartsPartQty').val(myResult.ProductPart.part_qty);
+            }
+        });
     }
+
+
 
 </script>
 

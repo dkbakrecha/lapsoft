@@ -24561,3 +24561,1379 @@ Request URL: /lapsoft/admin/dist/img/user3-128x128.jpg
 Stack Trace:
 #0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2018-06-19 20:43:32 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-19 20:43:44 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-19 20:43:44 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-19 20:50:07 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-19 20:50:07 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-19 20:50:07 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-19 20:50:11 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-19 20:50:11 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-19 20:50:15 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-19 20:50:15 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-23 17:08:36 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-23 17:08:36 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-23 17:08:40 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-23 17:08:40 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-23 17:08:40 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-23 17:08:40 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-23 19:33:08 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-23 19:33:10 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-23 19:33:10 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-23 19:33:12 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-23 19:33:12 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-23 19:33:29 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-23 19:33:29 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-23 19:33:29 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-23 19:33:34 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-23 19:33:34 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-23 19:34:57 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-23 19:34:57 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-24 08:51:46 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-24 08:51:46 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-24 08:51:52 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-24 08:51:52 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-24 09:08:37 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-24 09:08:37 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-24 09:08:41 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-24 09:08:41 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-24 09:24:32 Error: [MissingControllerException] Controller class CategoryController could not be found.
+Exception Attributes: array (
+  'class' => 'CategoryController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/category/get_parts_data
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-24 09:31:35 Error: [MissingControllerException] Controller class CategoryController could not be found.
+Exception Attributes: array (
+  'class' => 'CategoryController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/category/get_parts_data
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-24 10:41:31 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-24 10:41:31 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-24 10:41:34 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-24 10:41:34 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-24 11:04:53 Error: [MissingViewException] View file "D:\xampp\htdocs\lapsoft\app\View\Products\admin_add_product_parts.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'D:\\xampp\\htdocs\\lapsoft\\app\\View\\Products\\admin_add_product_parts.ctp',
+)
+Request URL: /lapsoft/admin/products/add_product_parts
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#4 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-06-24 11:04:53 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 11:04:53 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 11:12:34 Error: [MissingViewException] View file "D:\xampp\htdocs\lapsoft\app\View\Products\admin_add_product_parts.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'D:\\xampp\\htdocs\\lapsoft\\app\\View\\Products\\admin_add_product_parts.ctp',
+)
+Request URL: /lapsoft/admin/products/add_product_parts
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#4 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-06-24 11:12:35 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 11:12:35 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 11:12:35 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 11:12:35 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 11:20:59 Error: [MissingViewException] View file "D:\xampp\htdocs\lapsoft\app\View\Products\admin_add_product_parts.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'D:\\xampp\\htdocs\\lapsoft\\app\\View\\Products\\admin_add_product_parts.ctp',
+)
+Request URL: /lapsoft/admin/products/add_product_parts
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#4 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-06-24 11:20:59 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 11:20:59 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 11:21:27 Error: [MissingViewException] View file "D:\xampp\htdocs\lapsoft\app\View\Products\admin_add_product_parts.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'D:\\xampp\\htdocs\\lapsoft\\app\\View\\Products\\admin_add_product_parts.ctp',
+)
+Request URL: /lapsoft/admin/products/add_product_parts
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#4 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-06-24 11:21:28 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 11:21:28 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 11:25:20 Error: [MissingViewException] View file "D:\xampp\htdocs\lapsoft\app\View\Products\admin_add_product_parts.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'D:\\xampp\\htdocs\\lapsoft\\app\\View\\Products\\admin_add_product_parts.ctp',
+)
+Request URL: /lapsoft/admin/products/add_product_parts
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#4 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-06-24 11:25:20 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 11:25:20 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 11:25:21 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 11:25:21 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 11:28:03 Error: [MissingViewException] View file "D:\xampp\htdocs\lapsoft\app\View\Products\admin_add_product_parts.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'D:\\xampp\\htdocs\\lapsoft\\app\\View\\Products\\admin_add_product_parts.ctp',
+)
+Request URL: /lapsoft/admin/products/add_product_parts
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#4 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-06-24 11:28:04 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 11:28:04 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 11:30:26 Error: [MissingViewException] View file "D:\xampp\htdocs\lapsoft\app\View\Products\admin_add_product_parts.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'D:\\xampp\\htdocs\\lapsoft\\app\\View\\Products\\admin_add_product_parts.ctp',
+)
+Request URL: /lapsoft/admin/products/add_product_parts
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#4 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2018-06-24 11:30:27 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 11:30:27 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 11:30:38 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-24 11:30:38 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-24 11:30:44 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-24 11:30:44 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-24 11:33:37 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-24 12:56:07 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'part_qty' cannot be null
+Request URL: /lapsoft/admin/products/add_product_parts
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `la...', Array)
+#2 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `la...')
+#3 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Model.php(1850): DboSource->create(Object(AppModel), Array, Array)
+#4 D:\xampp\htdocs\lapsoft\app\Controller\ProductsController.php(224): Model->save(Array)
+#5 [internal function]: ProductsController->admin_add_product_parts()
+#6 D:\xampp\htdocs\lapsoft\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#7 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#9 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-06-24 12:56:07 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 12:56:07 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 12:56:39 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'part_qty' cannot be null
+Request URL: /lapsoft/admin/products/add_product_parts
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `la...', Array)
+#2 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `la...')
+#3 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Model.php(1850): DboSource->create(Object(AppModel), Array, Array)
+#4 D:\xampp\htdocs\lapsoft\app\Controller\ProductsController.php(224): Model->save(Array)
+#5 [internal function]: ProductsController->admin_add_product_parts()
+#6 D:\xampp\htdocs\lapsoft\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#7 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#9 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-06-24 12:56:39 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 12:56:39 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 12:57:19 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'part_qty' cannot be null
+Request URL: /lapsoft/admin/products/add_product_parts
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `la...', Array)
+#2 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `la...')
+#3 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Model.php(1850): DboSource->create(Object(AppModel), Array, Array)
+#4 D:\xampp\htdocs\lapsoft\app\Controller\ProductsController.php(224): Model->save(Array)
+#5 [internal function]: ProductsController->admin_add_product_parts()
+#6 D:\xampp\htdocs\lapsoft\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#7 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#9 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-06-24 12:57:19 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 12:57:20 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 12:58:59 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'part_qty' cannot be null
+Request URL: /lapsoft/admin/products/add_product_parts
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `la...', Array)
+#2 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `la...')
+#3 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Model.php(1850): DboSource->create(Object(AppModel), Array, Array)
+#4 D:\xampp\htdocs\lapsoft\app\Controller\ProductsController.php(224): Model->save(Array)
+#5 [internal function]: ProductsController->admin_add_product_parts()
+#6 D:\xampp\htdocs\lapsoft\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#7 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#9 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-06-24 12:58:59 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 12:58:59 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 12:59:46 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'part_qty' cannot be null
+Request URL: /lapsoft/admin/products/add_product_parts
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `la...', Array)
+#2 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `la...')
+#3 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Model.php(1850): DboSource->create(Object(AppModel), Array, Array)
+#4 D:\xampp\htdocs\lapsoft\app\Controller\ProductsController.php(224): Model->save(Array)
+#5 [internal function]: ProductsController->admin_add_product_parts()
+#6 D:\xampp\htdocs\lapsoft\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#7 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#9 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-06-24 12:59:46 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 12:59:46 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 13:00:00 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'part_qty' cannot be null
+Request URL: /lapsoft/admin/products/add_product_parts
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `la...', Array)
+#2 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `la...')
+#3 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Model.php(1850): DboSource->create(Object(AppModel), Array, Array)
+#4 D:\xampp\htdocs\lapsoft\app\Controller\ProductsController.php(224): Model->save(Array)
+#5 [internal function]: ProductsController->admin_add_product_parts()
+#6 D:\xampp\htdocs\lapsoft\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#7 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#9 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-06-24 13:00:01 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 13:00:01 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 13:00:49 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'part_qty' cannot be null
+Request URL: /lapsoft/admin/products/add_product_parts
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `la...', Array)
+#2 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `la...')
+#3 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Model.php(1850): DboSource->create(Object(AppModel), Array, Array)
+#4 D:\xampp\htdocs\lapsoft\app\Controller\ProductsController.php(224): Model->save(Array)
+#5 [internal function]: ProductsController->admin_add_product_parts()
+#6 D:\xampp\htdocs\lapsoft\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#7 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#9 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-06-24 13:00:49 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 13:00:49 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 13:02:16 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'part_qty' cannot be null
+Request URL: /lapsoft/admin/products/add_product_parts
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `la...', Array)
+#2 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `la...')
+#3 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Model.php(1850): DboSource->create(Object(AppModel), Array, Array)
+#4 D:\xampp\htdocs\lapsoft\app\Controller\ProductsController.php(224): Model->save(Array)
+#5 [internal function]: ProductsController->admin_add_product_parts()
+#6 D:\xampp\htdocs\lapsoft\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#7 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#9 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-06-24 13:02:16 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 13:02:16 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 13:02:51 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'part_qty' cannot be null
+Request URL: /lapsoft/admin/products/add_product_parts
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `la...', Array)
+#2 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `la...')
+#3 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Model.php(1850): DboSource->create(Object(AppModel), Array, Array)
+#4 D:\xampp\htdocs\lapsoft\app\Controller\ProductsController.php(224): Model->save(Array)
+#5 [internal function]: ProductsController->admin_add_product_parts()
+#6 D:\xampp\htdocs\lapsoft\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#7 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#9 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-06-24 13:02:51 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 13:02:51 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 13:02:52 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 13:05:04 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'part_qty' cannot be null
+Request URL: /lapsoft/admin/products/add_product_parts
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `la...', Array)
+#2 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `la...')
+#3 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Model.php(1850): DboSource->create(Object(AppModel), Array, Array)
+#4 D:\xampp\htdocs\lapsoft\app\Controller\ProductsController.php(224): Model->save(Array)
+#5 [internal function]: ProductsController->admin_add_product_parts()
+#6 D:\xampp\htdocs\lapsoft\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#7 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#9 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-06-24 13:05:04 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 13:05:04 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 13:07:21 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'part_qty' cannot be null
+Request URL: /lapsoft/admin/products/add_product_parts
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `la...', Array)
+#2 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `la...')
+#3 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Model.php(1850): DboSource->create(Object(AppModel), Array, Array)
+#4 D:\xampp\htdocs\lapsoft\app\Controller\ProductsController.php(224): Model->save(Array)
+#5 [internal function]: ProductsController->admin_add_product_parts()
+#6 D:\xampp\htdocs\lapsoft\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#7 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#9 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-06-24 13:07:22 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 13:07:22 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 13:10:31 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [D:\xampp\htdocs\lapsoft\app\View\Products\admin_edit.ctp, line 500]
+2018-06-24 13:10:31 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+Request URL: /lapsoft/admin/products/edit/1
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\xampp\htdocs...', 500)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\xampp\htdocs...', 500, Array)
+#2 D:\xampp\htdocs\lapsoft\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\xampp\htdocs...', 500, Array)
+#3 D:\xampp\htdocs\lapsoft\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-06-24 13:18:38 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'part_qty' cannot be null
+Request URL: /lapsoft/admin/products/add_product_parts
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `la...', Array)
+#2 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `la...')
+#3 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Model.php(1850): DboSource->create(Object(AppModel), Array, Array)
+#4 D:\xampp\htdocs\lapsoft\app\Controller\ProductsController.php(224): Model->save(Array)
+#5 [internal function]: ProductsController->admin_add_product_parts()
+#6 D:\xampp\htdocs\lapsoft\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#7 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#9 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-06-24 13:18:39 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 13:18:39 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 13:19:35 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'part_qty' cannot be null
+Request URL: /lapsoft/admin/products/add_product_parts
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `la...', Array)
+#2 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `la...')
+#3 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Model.php(1850): DboSource->create(Object(AppModel), Array, Array)
+#4 D:\xampp\htdocs\lapsoft\app\Controller\ProductsController.php(224): Model->save(Array)
+#5 [internal function]: ProductsController->admin_add_product_parts()
+#6 D:\xampp\htdocs\lapsoft\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#7 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#9 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-06-24 13:19:35 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 13:19:35 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 13:24:19 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'part_qty' cannot be null
+Request URL: /lapsoft/admin/products/add_product_parts
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `la...', Array)
+#2 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `la...')
+#3 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Model.php(1850): DboSource->create(Object(AppModel), Array, Array)
+#4 D:\xampp\htdocs\lapsoft\app\Controller\ProductsController.php(224): Model->save(Array)
+#5 [internal function]: ProductsController->admin_add_product_parts()
+#6 D:\xampp\htdocs\lapsoft\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#7 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#9 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-06-24 13:24:20 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 13:24:20 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 13:25:03 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'part_qty' cannot be null
+Request URL: /lapsoft/admin/products/add_product_parts
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `la...', Array)
+#2 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `la...')
+#3 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Model.php(1850): DboSource->create(Object(AppModel), Array, Array)
+#4 D:\xampp\htdocs\lapsoft\app\Controller\ProductsController.php(224): Model->save(Array)
+#5 [internal function]: ProductsController->admin_add_product_parts()
+#6 D:\xampp\htdocs\lapsoft\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#7 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#9 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-06-24 13:25:04 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 13:25:04 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 13:47:57 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'part_qty' cannot be null
+Request URL: /lapsoft/admin/products/add_product_parts
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `la...', Array)
+#2 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `la...')
+#3 D:\xampp\htdocs\lapsoft\lib\Cake\Model\Model.php(1850): DboSource->create(Object(AppModel), Array, Array)
+#4 D:\xampp\htdocs\lapsoft\app\Controller\ProductsController.php(224): Model->save(Array)
+#5 [internal function]: ProductsController->admin_add_product_parts()
+#6 D:\xampp\htdocs\lapsoft\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#7 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#9 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-06-24 13:47:58 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 13:47:58 Error: [MissingActionException] Action ProductsController::admin_dist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'admin_dist',
+)
+Request URL: /lapsoft/admin/products/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 D:\xampp\htdocs\lapsoft\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-06-24 14:18:49 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-24 14:18:49 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-24 14:18:52 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user4-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-24 14:18:52 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /lapsoft/admin/dist/img/user3-128x128.jpg
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-24 14:32:03 Error: Fatal Error (4): syntax error, unexpected T_STRING, expecting ')' in [D:\xampp\htdocs\lapsoft\app\View\Products\admin_edit.ctp, line 521]
+2018-06-24 14:32:03 Error: [FatalErrorException] syntax error, unexpected T_STRING, expecting ')'
+Request URL: /lapsoft/admin/products/edit/1
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\xampp\htdocs...', 521)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\xampp\htdocs...', 521, Array)
+#2 D:\xampp\htdocs\lapsoft\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\xampp\htdocs...', 521, Array)
+#3 D:\xampp\htdocs\lapsoft\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-06-24 14:32:44 Error: Fatal Error (4): syntax error, unexpected T_STRING, expecting ')' in [D:\xampp\htdocs\lapsoft\app\View\Products\admin_edit.ctp, line 520]
+2018-06-24 14:32:44 Error: [FatalErrorException] syntax error, unexpected T_STRING, expecting ')'
+Request URL: /lapsoft/admin/products/edit/1
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\xampp\htdocs...', 520)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\xampp\htdocs...', 520, Array)
+#2 D:\xampp\htdocs\lapsoft\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\xampp\htdocs...', 520, Array)
+#3 D:\xampp\htdocs\lapsoft\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-06-24 14:32:57 Error: Fatal Error (4): syntax error, unexpected T_STRING, expecting ')' in [D:\xampp\htdocs\lapsoft\app\View\Products\admin_edit.ctp, line 518]
+2018-06-24 14:32:57 Error: [FatalErrorException] syntax error, unexpected T_STRING, expecting ')'
+Request URL: /lapsoft/admin/products/edit/1
+Stack Trace:
+#0 D:\xampp\htdocs\lapsoft\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'D:\xampp\htdocs...', 518)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'D:\xampp\htdocs...', 518, Array)
+#2 D:\xampp\htdocs\lapsoft\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'D:\xampp\htdocs...', 518, Array)
+#3 D:\xampp\htdocs\lapsoft\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
