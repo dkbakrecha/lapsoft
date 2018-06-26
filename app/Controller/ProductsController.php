@@ -156,6 +156,7 @@ class ProductsController extends AppController {
         $condition = array();
         $condition['Product.status !='] = 2;
         $condition['Product.id'] = $id;
+       // $condition['ProductPart.status'] = 1;
 
         $productData = $this->Product->find('first', array(
             'conditions' => array($condition),
@@ -205,7 +206,8 @@ class ProductsController extends AppController {
 
 
 
-        // pr($productData);
+        //pr($productData);
+        $this->set('productData', $productData);
         $this->request->data = $productData;
     }
 
@@ -357,6 +359,27 @@ class ProductsController extends AppController {
         } else {
             $this->siteMessage("INVALID_REQUEST_DATA", array("[['data']]" => 'location'));
             $this->redirect(array('admin' => true, 'controller' => 'products', 'action' => 'add'));
+        }
+    }
+
+    public function admin_product_part_delete() {
+        if ($this->request->is('ajax')) {
+
+            $this->loadModel('ProductPart');
+            $partId = $this->request->data['Part_id'];
+            $data = array();
+            $data['ProductPart']['id'] = $partId;
+            $data['ProductPart']['status'] = 0;
+
+            if ($this->ProductPart->save($data)) {
+                echo '1';
+            } else {
+                echo '0';
+            }
+            exit;
+        } else {
+            $this->siteMessage("INVALID_REQUEST_DATA", array("[['data']]" => 'location'));
+            $this->redirect(array('admin' => true, 'controller' => 'products', 'action' => 'index'));
         }
     }
 
