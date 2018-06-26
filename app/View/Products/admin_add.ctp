@@ -91,7 +91,10 @@ if (isset($productId) && !empty($productId)) {
                                             'class' => 'form-control',
                                             'label' => false,
                                             'placeholder' => 'Only Number allowed',
-                                            'required' => true
+                                            'required' => true,
+                                            'type' => 'text',
+                                            'data-validation' => 'number',
+                                            'data-validation-error-msg-number' => "Only numbers allowed."
                                         ));
                                         ?>
                                     </div>
@@ -104,7 +107,10 @@ if (isset($productId) && !empty($productId)) {
                                             'class' => 'form-control',
                                             'label' => false,
                                             'placeholder' => 'Only Number allowed',
-                                            'required' => true
+                                            'required' => true,
+                                            'type' => 'text',
+                                            'data-validation' => 'number',
+                                            'data-validation-error-msg-number' => "Only numbers allowed."
                                         ));
                                         ?>
                                     </div>
@@ -117,7 +123,10 @@ if (isset($productId) && !empty($productId)) {
                                             'class' => 'form-control',
                                             'label' => false,
                                             'placeholder' => 'Only Number allowed',
-                                            'required' => true
+                                            'required' => true,
+                                            'type' => 'text',
+                                            'data-validation' => 'number',
+                                            'data-validation-error-msg-number' => "Only numbers allowed."
                                         ));
                                         ?>
                                     </div>
@@ -130,7 +139,26 @@ if (isset($productId) && !empty($productId)) {
                                             'class' => 'form-control',
                                             'label' => false,
                                             'placeholder' => 'Only Number allowed',
-                                            'required' => true
+                                            'required' => true,
+                                            'type' => 'text',
+                                            'data-validation' => 'number',
+                                            'data-validation-error-msg-number' => "Only numbers allowed."
+                                        ));
+                                        ?>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label  class="col-sm-2 control-label">CBM</label>
+                                    <div class="col-sm-10">
+                                        <?php
+                                        echo $this->Form->input('cbm', array(
+                                            'label' => false,
+                                            'class' => 'form-control',
+                                            'disabled' => true,
+                                            'type' => 'text',
+                                            'value' => '',
+                                            'data-validation' => 'number',
+                                            'data-validation-error-msg-number' => "Only numbers allowed."
                                         ));
                                         ?>
                                     </div>
@@ -177,18 +205,18 @@ if (isset($productId) && !empty($productId)) {
                                     </div>
                                 </div>
 
-                                <div class="form-group">
-                                    <label  class="col-sm-2 control-label">Keywords</label>
-                                    <div class="col-sm-10">
-                                        <?php
-                                        echo $this->Form->input('keywords', array(
-                                            'label' => false,
-                                            'class' => 'form-control',
-                                            'placeholder' => "Keywords if any for SEO purpose."
-                                        ));
-                                        ?>
-                                    </div>
-                                </div>
+                                <!--                                <div class="form-group">
+                                                                    <label  class="col-sm-2 control-label">Keywords</label>
+                                                                    <div class="col-sm-10">
+                                <?php
+//                                        echo $this->Form->input('keywords', array(
+//                                            'label' => false,
+//                                            'class' => 'form-control',
+//                                            'placeholder' => "Keywords if any for SEO purpose."
+//                                        ));
+                                ?>
+                                                                    </div>
+                                                                </div>-->
                             </div>
                             <!-- /.box-body -->
                             <div class="box-footer">
@@ -225,3 +253,8 @@ if (isset($productId) && !empty($productId)) {
     <!-- END CUSTOM TABS -->
 </section>
 <!-- /.content -->
+<script>
+    $.validate({
+        modules: 'file',
+    });
+</script>

@@ -77,8 +77,11 @@ $websiteTitle = ('Lariya Art Palace');
             // 'webjs/js/pages/dashboard.js', //AdminLTE dashboard demo (This is only for demo purposes)
             'webjs/js/demo.js', //AdminLTE for demo purposes
             'bootbox.min',
+            'jquery.blockUI'
         ));
         ?>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
     </head>
     <body class="hold-transition skin-blue sidebar-mini">
         <div class="wrapper">

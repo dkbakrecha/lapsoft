@@ -25,8 +25,8 @@ class Product extends AppModel {
 //        ),
 //    );
     public $hasMany = array(
-        'ProductParts' => array(
-            'className' => 'ProductParts',
+        'ProductPart' => array(
+            'className' => 'ProductPart',
             'foreignKey' => 'product_id',
         ),
     );

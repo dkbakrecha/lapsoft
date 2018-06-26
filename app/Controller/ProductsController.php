@@ -133,7 +133,7 @@ class ProductsController extends AppController {
 
     public function admin_edit($id = 0) {
         $this->set('title_for_layout', 'Edit Product');
-
+        $this->Product->Behaviors->load('Containable');
 
         // Start of checking URL valid accessibility
         if (!is_numeric($id)) {
@@ -156,12 +156,16 @@ class ProductsController extends AppController {
         $condition = array();
         $condition['Product.status !='] = 2;
         $condition['Product.id'] = $id;
-       // $condition['ProductPart.status'] = 1;
+
+
 
         $productData = $this->Product->find('first', array(
             'conditions' => array($condition),
+            'contain' => array('ProductPart' => array(
+                    'conditions' => array('ProductPart.status' => 1))
+            ),
         ));
-        //  prd($productData);
+        //prd($productData);
         $postData = $this->request->data;
 
         if (isset($postData) && !empty($postData)) {
@@ -216,12 +220,11 @@ class ProductsController extends AppController {
         $postData = $this->request->data;
 
         if (isset($postData) && !empty($postData)) {
-
-            $postData['ProductParts']['product_id'] = $postData['ProductParts']['productId'];
-
+            $postData['ProductParts']['status'] = 1;
+            //prd($postData);
             if ($this->ProductParts->save($postData)) {
                 $this->flash_msg('Product Part Updated', 1);
-                $this->redirect(array('admin' => true, 'controller' => 'products', 'action' => 'edit', $postData['ProductParts']['productId']));
+                $this->redirect(array('admin' => true, 'controller' => 'products', 'action' => 'edit', $postData['ProductParts']['product_id']));
             }
         }
     }
@@ -376,6 +379,27 @@ class ProductsController extends AppController {
             } else {
                 echo '0';
             }
+            exit;
+        } else {
+            $this->siteMessage("INVALID_REQUEST_DATA", array("[['data']]" => 'location'));
+            $this->redirect(array('admin' => true, 'controller' => 'products', 'action' => 'index'));
+        }
+    }
+
+    public function admin_get_parts_data() {
+        if ($this->request->is('ajax')) {
+
+            $this->loadModel('ProductPart');
+            $partId = $this->request->data['partId'];
+
+            $data = array();
+            $data = $this->ProductPart->find('first', array(
+                'conditions' => array(
+                    'ProductPart.id' => $partId,
+                    'ProductPart.status' => 1)
+            ));
+            // prd($data);
+            echo json_encode($data);
             exit;
         } else {
             $this->siteMessage("INVALID_REQUEST_DATA", array("[['data']]" => 'location'));
